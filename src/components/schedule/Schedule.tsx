@@ -38,12 +38,52 @@ const Schedule: React.FC = () => {
         ]
       }
     ],
-    day2: [],
-    day3: []
+    day2: [
+      {
+        time: "10:00 AM",
+        name: "Inauguration",
+        details: []
+      },
+      {
+        time: "11:30 AM",
+        name: "Plenary Talk Dr. Mini Shaji Thomas",
+        details: []
+      },
+      {
+        time: "02:30 PM",
+        name: "Paper Presentation:",
+        details: [
+          "Session 1",
+          "Session 2",
+          "Session 3"
+        ]
+      }
+    ],
+    day3: [
+      {
+        time: "10:00 AM",
+        name: "Inauguration",
+        details: []
+      },
+      {
+        time: "11:30 AM",
+        name: "Plenary Talk Dr. Mini Shaji Thomas",
+        details: []
+      },
+      {
+        time: "02:30 PM",
+        name: "Paper Presentation:",
+        details: [
+          "Session 1",
+          "Session 2",
+          "Session 3"
+        ]
+      }
+    ]
   };
 
   return (
-    <div className='w-full min-h-screen bg-[#FFE1EA] flex flex-col items-center p-8'>
+    <div className='w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col items-center p-8'>
       <h1 className='text-4xl font-bold mt-12 mb-10'>EVENT SCHEDULE</h1>
       <div className='flex space-x-4 mb-8'>
         {Object.keys(schedule).map((day) => (
