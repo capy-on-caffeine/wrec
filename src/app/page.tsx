@@ -1,10 +1,12 @@
+import Schedule from '@/components/schedule/Schedule'
+import Tracks from '@/components/tracks/Tracks'
 import React from 'react'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import AboutUs from './components/AboutUs'
-import Footer from './components/Footer'
-import ContactUs from './components/ContactUs'
-import KeynoteSpeakers from './components/KeynoteSpeakers'
+import Navbar from '@/components/Navbar'
+import HeroSection from '@/components/HeroSection'
+import AboutUs from '@/components/AboutUs'
+import ContactUs from '@/components/ContactUs'
+import Footer from '@/components/Footer'
+import KeynoteSpeakers from '@/components/KeynoteSpeakers'
 
 const Home = () => {
   return (
@@ -13,6 +15,9 @@ const Home = () => {
       <HeroSection/>
       <AboutUs/>
       <KeynoteSpeakers/>
+
+      <Schedule/>
+      <Tracks/>
       <ContactUs/>
       <Footer/>
     </div>
