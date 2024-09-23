@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Conference Info */}
           <div className="text-center lg:text-left">
             <h2 className="text-2xl font-bold">
-              WREC'<span className="text-pink-500">25</span>
+              {`WREC'`}<span className="text-pink-500">25</span>
             </h2>
             <p className="text-lg font-semibold mt-2">Women Researchers in Electronics and Computing</p>
             <p className="text-gray-500 mt-1">Department of Electronics and Communication Engineering</p>

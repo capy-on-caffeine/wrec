@@ -14,7 +14,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center space-x-2">
           <img src="/logo.jpeg" alt="Logo" className="w-10 h-10" />
           <span className="text-xl font-bold">
-            WREC'<span className='text-pink-500'>25</span>
+            {`WREC'`}<span className='text-pink-500'>25</span>
           </span>
         </a>
 
