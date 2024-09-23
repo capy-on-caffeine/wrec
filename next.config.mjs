@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    basePath: "/wrec",
+    output: "export",
+    reactStrictMode: true,
+  };
+  
+  module.exports = nextConfig;
