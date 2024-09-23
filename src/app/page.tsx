@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection'
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
+import KeynoteSpeakers from './components/KeynoteSpeakers'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroSection/>
       <AboutUs/>
       <Tracks />
+      <KeynoteSpeakers />
       <Schedule />
       <ContactUs/>
       <Footer/>
