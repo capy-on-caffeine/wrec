@@ -102,7 +102,7 @@ const Tutorials: React.FC = () => {
     <section id='tutorials' className="bg-gradient-to-br from-pink-100 to-pink-300 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-center text-pink-800 mb-12">
-          Our <span className="text-pink-600">Keynote Speakers</span>
+          Our <span className="text-pink-600">TUTORIALS</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {speakers.map((speaker, index) => (
