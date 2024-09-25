@@ -22,7 +22,7 @@ const Tracks = () => {
   ];
 
   return (
-    <div className='w-full h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col justify-start items-center'>
+    <div id='tracks' className='w-full h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col justify-start items-center'>
         <h1 className='text-4xl mt-20 mb-10'>CONFERENCE TRACKS</h1>
         <div className='w-2/3 h-3/5 flex justify-center items-center flex-wrap gap-10'>
             {
@@ -30,7 +30,6 @@ const Tracks = () => {
                     return <TrackCard key={index} {...data} />
                 })
             }
-            {/* <TrackCard {...cardData[0]} /> */}
         </div>
     </div>
   )

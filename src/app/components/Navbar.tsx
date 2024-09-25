@@ -1,5 +1,6 @@
-'use client'
-import { useState } from 'react';
+"use client"
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,15 +9,32 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false); // Close the mobile menu after clicking
+  };
+
+  useEffect(() => {
+    // Add smooth scrolling behavior to the entire page
+    document.documentElement.style.scrollBehavior = 'smooth';
+
+    return () => {
+      document.documentElement.style.scrollBehavior = 'auto';
+    };
+  }, []);
+
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md fixed top-0 z-20 w-full">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-        <a href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <img src="/logo.jpeg" alt="Logo" className="w-10 h-10" />
           <span className="text-xl font-bold">
             {`WREC'`}<span className='text-pink-500'>25</span>
           </span>
-        </a>
+        </Link>
 
         <button
           className="block md:hidden"
@@ -44,17 +62,18 @@ const Navbar = () => {
           } `}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6">
-            {['KEYNOTE SPEAKERS', 'ABOUT US', 'DATES', 'TRACKS', 'COMMITTEE', 'SCHEDULE', 'FOR AUTHORS', 'CONTACT'].map((item, index) => (
+            {['ABOUT US','TRACKS', 'KEYNOTE SPEAKERS', 'TUTORIALS', 'SCHEDULE', 'CONTACT'].map((item, index) => (
               <li key={index}>
-                <a 
-                  href={`/#${item.toLowerCase().replace(' ', '')}`} 
+                <Link 
+                  href={`#${item.toLowerCase().replace(' ', '')}`} 
                   className="relative group py-2 px-1 transition-all duration-300 ease-in-out hover:text-blue-500"
+                  onClick={() => scrollToSection(item.toLowerCase().replace(' ', ''))}
                 >
                   <span className="relative z-10 transform group-hover:scale-110 inline-block transition-transform duration-300 ease-in-out">
                     {item}
                   </span>
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

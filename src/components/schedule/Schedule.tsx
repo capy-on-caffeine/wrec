@@ -83,7 +83,7 @@ const Schedule: React.FC = () => {
   };
 
   return (
-    <div className='w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col items-center p-8'>
+    <div id='schedule' className='w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col items-center p-8'>
       <h1 className='text-4xl font-bold mt-12 mb-10'>EVENT SCHEDULE</h1>
       <div className='flex space-x-4 mb-8'>
         {Object.keys(schedule).map((day) => (
