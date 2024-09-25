@@ -67,7 +67,7 @@ const SpeakerCard: React.FC<{ speaker: Speaker }> = ({ speaker }) => {
   );
 };
 
-const KeynoteSpeakers: React.FC = () => {
+const Tutorials: React.FC = () => {
   const speakers: Speaker[] = [
     {
       name: "Dr. Sarah Johnson",
@@ -99,7 +99,7 @@ const KeynoteSpeakers: React.FC = () => {
   ];
 
   return (
-    <section id='keynotespeakers' className="bg-gradient-to-br from-pink-100 to-pink-300 py-16">
+    <section id='tutorials' className="bg-gradient-to-br from-pink-100 to-pink-300 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-center text-pink-800 mb-12">
           Our <span className="text-pink-600">Keynote Speakers</span>
@@ -121,4 +121,4 @@ const KeynoteSpeakers: React.FC = () => {
   );
 };
 
-export default KeynoteSpeakers;
+export default Tutorials;

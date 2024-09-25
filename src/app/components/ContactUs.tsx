@@ -26,7 +26,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-white py-16">
+    <div id='contact' className="bg-white py-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row items-start justify-between">
           {/* Image Section */}

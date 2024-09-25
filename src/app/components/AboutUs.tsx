@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'; // Assuming you use framer-motion for an
 
 const AboutUs = () => {
   return (
-    <div className="bg-white py-16">
+    <div id='aboutus' className="bg-white py-16">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Title Section */}
         <motion.h2
