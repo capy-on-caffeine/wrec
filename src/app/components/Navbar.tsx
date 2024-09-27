@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed top-0 z-20 w-full">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.jpeg" alt="Logo" className="w-10 h-10" />
+          <img src="/logo.jpeg" alt="Logo" className="w-14 h-14" />
           <span className="text-xl font-bold">
             {`WREC'`}<span className='text-pink-500'>25</span>
           </span>
@@ -62,7 +62,7 @@ const Navbar = () => {
           } `}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6">
-            {['ABOUT US','TRACKS', 'KEYNOTE SPEAKERS', 'TUTORIALS', 'SCHEDULE', 'CONTACT'].map((item, index) => (
+            {['ABOUT US','TRACKS', 'KEYNOTE SPEAKERS', 'TUTORIALS', 'SCHEDULE', 'COMMITTEE', 'CONTACT'].map((item, index) => (
               <li key={index}>
                 <Link 
                   href={`#${item.toLowerCase().replace(' ', '')}`} 

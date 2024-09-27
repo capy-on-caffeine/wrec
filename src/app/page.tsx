@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
 import KeynoteSpeakers from './components/KeynoteSpeakers'
 import Tutorials from './components/Tutorials'
+import Committee from '@/components/committee/Committee'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <KeynoteSpeakers />
       <Tutorials />
       <Schedule />
+      <Committee />
       <ContactUs/>
       <Footer/>
     </div>

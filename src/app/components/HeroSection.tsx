@@ -3,28 +3,28 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <div className="bg-pink-50 h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-4 z-10">
+      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10">
         <div className="animate-fade-in-up">
           <h2 className="text-gray-600 mb-2">
-            <span className="bg-pink-200 rounded-md px-2 py-1">
+            <span className="bg-pink-200 rounded-md px-2 py-1 mb-2">
               2nd International Conference
             </span>
           </h2>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
             Women Researchers in<br />Electronics and Computing
           </h1>
-          <p className="text-gray-600 mb-6">Presented by</p>
-          <p className="text-gray-800 mb-2">
+          <p className="text-gray-500 mb-2">Presented by</p>
+          <p className="text-gray-800">
             Department of Electronics and Communication Engineering
           </p>
           <p className="text-gray-800 mb-8">
-            Dr BR Ambedkar National Institute of Technology, Jalandhar, Punjab, India
+            Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab, India
           </p>
           <div className="flex justify-start space-x-4">
-            <button className="bg-gray-800 text-white px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
+            <button className="bg-gray-800 text-white text-lg px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
               Register
             </button>
-            <button className="bg-white text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
+            <button className="bg-white text-lg text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
               Sponsored By
             </button>
           </div>

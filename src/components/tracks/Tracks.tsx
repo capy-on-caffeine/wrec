@@ -2,27 +2,6 @@ import React from 'react'
 import TrackCard from './TrackCard';
 
 const Tracks = () => {
-//   const orgmembers = {
-//     chiefPatrons: [
-//         'Dr. B K Kanaujia, Professor, Director, NIT Jalandhar'
-//     ],
-//     executiveGeneralChair: [
-//         'Dr. Mamta Khosla, Associate Professor, NIT Jalandhar',
-//         'Dr. Indu Saini, Associate Professor, NIT Jalandhar',
-//     ],
-//     programGeneralChair: [
-
-//     ],
-//     organisingSecretary: [
-
-//     ],
-//     advisoryCommittee: [
-
-//     ],
-//     technicalProgramCommittee: [
-
-//     ]
-//   }
   const cardData = [
     {
         name: "Visual and Signal Computing",

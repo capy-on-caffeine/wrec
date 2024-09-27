@@ -24,7 +24,7 @@ const Modal = ({ isOpen, onClose, name, chair, topics }: ModalProps) => {
           </button>
         </div>
         <h3 className="text-xl font-bold">Chair - { chair }</h3>
-        <h3 className="text-xl">Topics:</h3>
+        <h3 className="text-base text-gray-700 mt-4 mb-2">Topics:</h3>
         <ul className="list-disc pl-5 space-y-2">
           {topics.map((topic, index) => (
             <li key={index} className="text-gray-700">
