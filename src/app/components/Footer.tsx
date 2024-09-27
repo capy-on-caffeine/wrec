@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-white py-16 relative overflow-hidden">
+    <div className="bg-gradient-to-r from-white to-gray-50 py-16 relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between relative z-10">
         {/* Left Section */}
         <div className="flex flex-col items-center lg:items-start">

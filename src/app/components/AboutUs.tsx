@@ -17,10 +17,10 @@ const AboutUs = () => {
         </motion.h2>
         
         {/* Content Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between mb-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-center mb-8">
           {/* Image Section */}
           <motion.div
-            className="lg:w-1/2 mb-8 lg:mb-0 lg:mr-4"
+            className="lg:w-1/5 mb-8 lg:mb-0 lg:mr-16 flex justify-center"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -28,7 +28,7 @@ const AboutUs = () => {
             <img 
               src="/Frame 15.png" // Update this path with the correct image URL
               alt="Woman in Science" 
-              className="w-1/3 h-2/3 rounded object-cover items-center" 
+              className="w-full h-auto rounded object-cover items-center" 
             />
           </motion.div>
 
