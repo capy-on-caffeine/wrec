@@ -109,7 +109,7 @@ const KeynoteSpeakers: React.FC = () => {
       name: "Dr. Sri Devi Ravana",
       qualification: "Associate Professor, University of Malaya, Kuala Lumpur",
       bio: "Dr. Ravana is an expert in information retrieval systems and data mining. Her work has greatly influenced how large-scale data is processed and retrieved.",
-      imageUrl: "/images/people/sridevi.jpeg",
+      imageUrl: "/images/people/sridevi.jpg",
       twitter: "",
       linkedin: "https://www.linkedin.com/in/sdravana/",
       website: "https://umexpert.um.edu.my/sri-devi"
