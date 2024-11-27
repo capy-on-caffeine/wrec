@@ -15,7 +15,7 @@ const TrackCard = ({ name, img, chair, topics }: TrackCardProps) => {
 
   return (
     <>
-      <div className="relative w-[30%] h-2/5 bg-[#ff95b6] rounded-2xl flex items-center justify-between p-6 shadow-lg box-border z-0">
+      <div className="relative w-3/4 lg:w-[30%] h-2/5 bg-[#ff95b6] rounded-2xl flex items-center justify-between p-6 shadow-lg box-border z-0">
         <div className="flex flex-col justify-center">
           <h3 className="text-[#110e0e] text-xl font-semibold font-['Avenir LT Std'] tracking-wide mb-4">
             {name}

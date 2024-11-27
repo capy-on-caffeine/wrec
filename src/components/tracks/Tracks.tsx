@@ -59,9 +59,9 @@ const Tracks = () => {
   ];
 
   return (
-    <div id='tracks' className='w-full h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col justify-start items-center'>
+    <div id='tracks' className='w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col justify-start items-center'>
         <h1 className='text-4xl mt-20 mb-10'>CONFERENCE TRACKS</h1>
-        <div className='w-5/6 h-3/5 flex justify-center items-center flex-wrap gap-10'>
+        <div className='w-full min-h-screen lg:w-5/6 lg:h-3/5 flex flex-col lg:flex-row justify-center items-center lg:flex-wrap gap-10'>
             {
                 cardData.map((data, index) => {
                     return <TrackCard key={index} {...data} />
