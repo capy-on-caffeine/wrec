@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="animate-fade-in-up">
           <h2 className="text-gray-600 mb-2">
             <span className="bg-pink-200 rounded-md px-2 py-1 mb-2">
-              2nd International Conference
+              3rd International Conference
             </span>
           </h2>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
