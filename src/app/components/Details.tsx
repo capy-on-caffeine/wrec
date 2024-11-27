@@ -18,15 +18,15 @@ const Details = () => {
         <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full max-w-lg mx-auto mt-10 flex flex-col gap-4">
             <h2 className="text-center w-full text-xl font-bold">Fee for the conference</h2>
           <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-medium text-pink-500">Students:</h3>
+            <h3 className="text-lg font-medium text-pink-500">External Students:</h3>
             <p className="text-gray-700">Rs. 3000 + GST</p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-medium text-pink-500">Internal</h3>
+            <h3 className="text-lg font-medium text-pink-500">Internal Faculty</h3>
             <p className="text-gray-700">Rs. 4000 + GST</p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-medium text-pink-500">External</h3>
+            <h3 className="text-lg font-medium text-pink-500">External Faculty</h3>
             <p className="text-gray-700">Rs. 5000 + GST</p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
