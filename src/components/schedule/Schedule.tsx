@@ -15,6 +15,7 @@ interface ScheduleData {
 
 const Schedule: React.FC = () => {
   const [activeDay, setActiveDay] = useState<string>('day1');
+  const showSchedule = false;
 
   const schedule: ScheduleData = {
     day1: [
@@ -82,6 +83,22 @@ const Schedule: React.FC = () => {
     ]
   };
 
+  const renderSchedule = () => {
+    if (showSchedule) {
+      return (
+        <div className='w-full max-w-3xl bg-white rounded-lg p-6'>
+          {schedule[activeDay].map((item, index) => (
+            <ScheduleRow key={index} item={item} />
+          ))}
+        </div>
+      )
+    } else {
+      return (
+        <h1>Scheudule to be declared</h1>
+      )
+    }
+  }
+
   return (
     <div id='schedule' className='w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col items-center p-8'>
       <h1 className='text-4xl font-bold mt-12 mb-10'>EVENT SCHEDULE</h1>
@@ -97,10 +114,7 @@ const Schedule: React.FC = () => {
         ))}
       </div>
       <div className='w-full max-w-3xl bg-white rounded-lg shadow-md p-6'>
-        <h2 className='text-2xl font-semibold mb-4'>Program Schedule:</h2>
-        {schedule[activeDay].map((item, index) => (
-          <ScheduleRow key={index} item={item} />
-        ))}
+        {renderSchedule()}
       </div>
     </div>
   )
