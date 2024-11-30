@@ -32,17 +32,17 @@ const ContactUs = () => {
           {/* Image Section */}
           <div className="grid grid-cols-2 gap-4 lg:w-1/2 mb-8 lg:mb-0">
             <img
-              src="/Frame 21.png"  // Update with your image paths
+              src="/random_img1.jpg"  // Update with your image paths
               alt="Contact Image 1"
               className="rounded-lg w-2/3 h-full"
             />
             <img
-              src="/Frame 22.png"
+              src="/random_img2.jpeg"
               alt="Contact Image 2"
               className="rounded-lg w-2/3 h-full"
             />
             <img
-              src="/Frame 19.png"
+              src="/random_img3.jpg"
               alt="Contact Image 3"
               className="rounded-lg w-2/3 h-full "
             />

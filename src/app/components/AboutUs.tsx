@@ -26,7 +26,7 @@ const AboutUs = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <img 
-              src="/Frame 15.png" // Update this path with the correct image URL
+              src="/about_img.jpg" // Update this path with the correct image URL
               alt="Woman in Science" 
               className="w-full h-auto rounded object-cover items-center" 
             />
