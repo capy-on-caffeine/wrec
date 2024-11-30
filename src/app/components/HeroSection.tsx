@@ -3,44 +3,59 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="bg-pink-50 h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10">
-        <div className="animate-fade-in-up">
-          <h2 className="text-gray-800 mb-4">
-            <span className="bg-pink-200 rounded-md text-lg font-bold px-3 py-2 mb-2">
-              3rd International Conference
-            </span>
-          </h2>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-            Women Researchers in
-            <br />
-            Electronics and Computing
-          </h1>
-          <div className="mb-4">
-            <p className="text-gray-500 mb-2">For the theme of</p>
-            <p className="text-gray-800">Sustainable Development Goals</p>
-          </div>
-          <div>
-            <p className="text-gray-500 mb-2">Presented by</p>
-            <p className="text-gray-800">
-              Department of Electronics and Communication Engineering and
-              Department of Computer Science and Engineering
+      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10 flex items-center">
+        <div className="flex-grow">
+          <div className="animate-fade-in-up">
+            <h2 className="text-gray-800 mb-4">
+              <span className="bg-pink-200 rounded-md text-lg font-bold px-3 py-2 mb-2">
+                3rd International Conference
+              </span>
+            </h2>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+              Women Researchers in
+              <br />
+              Electronics and Computing
+            </h1>
+            <div className="mb-4">
+              <p className="text-gray-500 mb-2">For the theme of</p>
+              <p className="text-gray-800">Sustainable Development Goals</p>
+            </div>
+            <div>
+              <p className="text-gray-500 mb-2">Presented by</p>
+              <p className="text-gray-800">
+                Department of Electronics and Communication Engineering and
+                Department of Computer Science and Engineering
+              </p>
+            </div>
+            <p className="text-gray-800 mb-8">
+              Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab,
+              India
             </p>
+            <div className="flex justify-start space-x-4">
+              <button className="bg-gray-800 text-white text-lg px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
+                Register
+              </button>
+              <button className="bg-white text-lg text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
+                Sponsored By
+              </button>
+            </div>
           </div>
-          <p className="text-gray-800 mb-8">
-            Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab,
-            India
-          </p>
-          <div className="flex justify-start space-x-4">
-            <button className="bg-gray-800 text-white text-lg px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
-              Register
-            </button>
-            <button className="bg-white text-lg text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
-              Sponsored By
-            </button>
+        </div>
+        
+        {/* Date Card */}
+        <div className="w-96 ml-10 flex-shrink-0">
+          <div className="bg-white shadow-lg rounded-lg px-6 py-12 border border-gray-100">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Conference Date</h3>
+              <div className="text-2xl font-bold text-pink-600">
+                18-20 April, 2025
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/* Move the background image to the right side */}
+      
+      {/* Background elements */}
       <div
         className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-no-repeat"
         style={{ backgroundImage: `url('/Group.png')` }}
