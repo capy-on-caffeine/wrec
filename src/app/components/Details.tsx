@@ -22,18 +22,26 @@ const Details = () => {
             <p className="text-gray-700">Rs. 3000 + GST</p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-medium text-pink-500">Internal</h3>
+            <h3 className="text-lg font-medium text-pink-500">Students from NIT Jalandhar:</h3>
+            <p className="text-gray-700">Rs. 3000</p>
+          </div>
+          <div className="bg-white shadow-md rounded-lg p-4">
+            <h3 className="text-lg font-medium text-pink-500">Faculty:</h3>
             <p className="text-gray-700">Rs. 4000 + GST</p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-medium text-pink-500">External</h3>
+            <h3 className="text-lg font-medium text-pink-500">Faculty from NIT Jalandhar:</h3>
+            <p className="text-gray-700">Rs. 4000</p>
+          </div>
+          <div className="bg-white shadow-md rounded-lg p-4">
+            <h3 className="text-lg font-medium text-pink-500">Industry Experts:</h3>
             <p className="text-gray-700">Rs. 5000 + GST</p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
             <h3 className="text-lg font-medium text-pink-500">
               Foreign authors
             </h3>
-            <p className="text-gray-700">$100</p>
+            <p className="text-gray-700">USD 100</p>
           </div>
         </div>
 
@@ -53,7 +61,7 @@ const Details = () => {
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
             <h3 className="text-lg font-medium text-pink-500">
-              Camera ready/registration
+              Camera ready & registration
             </h3>
             <p className="text-gray-700">{data.coursesReady}</p>
           </div>
