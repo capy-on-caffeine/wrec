@@ -39,13 +39,13 @@ const AboutUs = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <p className="mb-4 text-gray-700">
+            <p className="mb-4 text-gray-700 text-justify">
               Though women are underrepresented in engineering, the number has been growing consistently as more women are opting to pursue studies in this field. There is still a lot to be done to encourage this trend. We would like to dedicate this conference to promoting and encouraging women engineers and motivating young girls to follow their academic interests to a career in engineering.
             </p>
-            <p className="mb-4 text-gray-700">
+            <p className="mb-4 text-gray-700 text-justify">
               To inspire women engineers, successful women pioneers in the fields of VLSI design, wireless sensor networks, communication, image/signal processing, machine learning, and emerging technologies have been identified globally and invited to present their work and address the participants in this women-oriented conference.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               All the keynote speakers, tutorial presenters, session chairs, and members of the organizing team are women.
             </p>
           </motion.div>
