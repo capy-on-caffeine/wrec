@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="bg-pink-50 h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10 flex items-center">
+      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10 flex flex-col lg:flex-row gap-10 items-center">
         <div className="flex-grow">
           <div className="animate-fade-in-up">
             <h2 className="text-gray-800 mb-4">
@@ -11,15 +11,14 @@ const HeroSection = () => {
                 3rd International Conference
               </span>
             </h2>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-2">
               Women Researchers in
               <br />
               Electronics and Computing
             </h1>
-            <div className="mb-4">
-              <p className="text-gray-500 mb-2">For the theme of</p>
-              <p className="text-gray-800">Sustainable Development Goals</p>
-            </div>
+            <h2 className="text-2xl md:text-4xl font-semibold text-gray-500 mb-6">
+              on sustainable development goals
+            </h2>
             <div>
               <p className="text-gray-500 mb-2">Presented by</p>
               <p className="text-gray-800">
@@ -43,8 +42,8 @@ const HeroSection = () => {
         </div>
         
         {/* Date Card */}
-        <div className="w-96 ml-10 flex-shrink-0">
-          <div className="bg-white shadow-lg rounded-lg px-6 py-12 border border-gray-100">
+        <div className="w-64 lg:w-96 mx-auto lg:ml-10 flex-shrink-0">
+          <div className="bg-white shadow-lg rounded-lg px-6 lg:py-12 py-6 border border-gray-100">
             <div className="text-center">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Conference Date</h3>
               <div className="text-2xl font-bold text-pink-600">

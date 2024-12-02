@@ -23,7 +23,7 @@ const Committee = () => {
   const orgmembers: OrgMembers = {
     chiefPatrons: ["Dr. B K Kanaujia, Professor, Director, NIT Jalandhar"],
     executiveGeneralChair: [
-      "Dr. Mamta Khosla, Associate Professor, NIT Jalandhar",
+      "Dr. Mamta Khosla, Professor, NIT Jalandhar",
       "Dr. Indu Saini, Associate Professor, NIT Jalandhar",
       "Dr. Neetu Sood, Associate Professor, NIT Jalandhar",
       "Dr. Deepti Kakkar, Associate Professor, NIT Jalandhar",
@@ -74,7 +74,7 @@ const Committee = () => {
       "Dr. Poonam Bansal, Professor, IGDTUW Delhi",
       "Dr S. Indu, Professor, DTU Delhi",
       "Dr Gurmeet Kaur, Professor, Punjabi University",
-      "Dr Renu Dhir, Associate Professor, NIT Jalandhar",
+      "Dr Renu Dhir, Professor, NIT Jalandhar",
       "Dr. Sonia, Assistant Professor, Punjabi University Patiala",
       "Dr. ILA Sharma, Assistant Professor, MNIT Jaipur",
       "Dr. Jasdeep Kaur Dhanoa, Professor, IGDTUW Delhi",
