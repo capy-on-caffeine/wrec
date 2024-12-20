@@ -141,7 +141,7 @@ const Details = () => {
               </li>
               <li>
                 All submissions will undergo a double-blind peer review process.
-                Ensure that authors' identities are anonymized in the
+                Ensure that authors&apos; identities are anonymized in the
                 manuscript.
               </li>
             </ol>
