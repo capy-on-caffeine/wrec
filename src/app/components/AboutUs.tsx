@@ -1,10 +1,10 @@
-'use client'
-import React from 'react';
-import { motion } from 'framer-motion'; // Assuming you use framer-motion for animations
+"use client";
+import React from "react";
+import { motion } from "framer-motion"; // Assuming you use framer-motion for animations
 
 const AboutUs = () => {
   return (
-    <div id='aboutus' className="bg-white py-16">
+    <div id="aboutus" className="bg-white py-16">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Title Section */}
         <motion.h2
@@ -15,7 +15,7 @@ const AboutUs = () => {
         >
           <span className="text-pink-500 underline">ABOUT</span> US
         </motion.h2>
-        
+
         {/* Content Section */}
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-center mb-8">
           {/* Image Section */}
@@ -25,10 +25,10 @@ const AboutUs = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <img 
+            <img
               src="/about_img.jpg" // Update this path with the correct image URL
-              alt="Woman in Science" 
-              className="w-full h-auto rounded object-cover items-center" 
+              alt="Woman in Science"
+              className="w-full h-auto rounded object-cover items-center"
             />
           </motion.div>
 
@@ -40,13 +40,25 @@ const AboutUs = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <p className="mb-4 text-gray-700 text-justify">
-              Though women are underrepresented in engineering, the number has been growing consistently as more women are opting to pursue studies in this field. There is still a lot to be done to encourage this trend. We would like to dedicate this conference to promoting and encouraging women engineers and motivating young girls to follow their academic interests to a career in engineering.
+              Though women are underrepresented in engineering, the number has
+              been growing consistently as more women are opting to pursue
+              studies in this field. There is still a lot to be done to
+              encourage this trend. We would like to dedicate this conference to
+              promoting and encouraging women engineers and motivating young
+              girls to follow their academic interests to a career in
+              engineering.
             </p>
             <p className="mb-4 text-gray-700 text-justify">
-              To inspire women engineers, successful women pioneers in the fields of VLSI design, wireless sensor networks, communication, image/signal processing, machine learning, and emerging technologies have been identified globally and invited to present their work and address the participants in this women-oriented conference.
+              To inspire women engineers, successful women pioneers in the
+              fields of VLSI design, wireless sensor networks, communication,
+              image/signal processing, machine learning, and emerging
+              technologies have been identified globally and invited to present
+              their work and address the participants in this women-oriented
+              conference.
             </p>
             <p className="text-gray-700 text-justify">
-              All the keynote speakers, tutorial presenters, session chairs, and members of the organizing team are women.
+              All the keynote speakers, tutorial presenters, session chairs, and
+              members of the organizing team are women.
             </p>
           </motion.div>
         </div>

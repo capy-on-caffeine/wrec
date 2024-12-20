@@ -97,9 +97,12 @@ const Committee = () => {
   };
 
   return (
-    <div id='committee' className="w-full py-16 bg-white flex flex-col justify-start items-center">
+    <div
+      id="committee"
+      className="w-full py-16 bg-white flex flex-col justify-start items-center"
+    >
       {/* Heading for the Committee Section */}
-      <h1 className='text-4xl font-bold mb-10'>CONFERENCE COMMITTEE</h1>
+      <h1 className="text-4xl font-bold mb-10">CONFERENCE COMMITTEE</h1>
 
       <div className="max-w-3xl w-full mx-auto p-4 bg-white rounded shadow-md">
         {Object.keys(orgmembers).map((key, index) => (
@@ -110,7 +113,9 @@ const Committee = () => {
               }`}
               onClick={() => handleToggle(index)}
             >
-              <h3 className="text-lg font-bold capitalize">{key.replace(/([A-Z])/g, ' $1')}</h3>
+              <h3 className="text-lg font-bold capitalize">
+                {key.replace(/([A-Z])/g, " $1")}
+              </h3>
               <span className="text-pink-500">
                 {activeIndex === index ? "-" : "+"}
               </span>
@@ -123,7 +128,7 @@ const Committee = () => {
                       <li key={itemIndex} className="text-gray-600">
                         {item}
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

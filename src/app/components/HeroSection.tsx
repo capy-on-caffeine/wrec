@@ -27,8 +27,8 @@ const HeroSection = () => {
               </p>
             </div>
             <p className="text-gray-800 mb-8">
-              Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab,
-              India
+              Dr B R Ambedkar National Institute of Technology, Jalandhar,
+              Punjab, India
             </p>
             <div className="flex justify-start space-x-4">
               <button className="bg-gray-800 text-white text-lg px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
@@ -40,12 +40,14 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Date Card */}
         <div className="w-64 lg:w-96 mx-auto lg:ml-10 flex-shrink-0">
           <div className="bg-white shadow-lg rounded-lg px-6 lg:py-12 py-6 border border-gray-100">
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Conference Date</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Conference Date
+              </h3>
               <div className="text-2xl font-bold text-pink-600">
                 18-20 April, 2025
               </div>
@@ -53,7 +55,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Background elements */}
       <div
         className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-no-repeat"
