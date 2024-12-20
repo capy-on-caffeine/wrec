@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -13,10 +13,15 @@ const Footer = () => {
           {/* Conference Info */}
           <div className="text-center lg:text-left">
             <h2 className="text-2xl font-bold">
-              {`WREC'`}<span className="lg:text-pink-500 text-white">25</span>
+              {`WREC'`}
+              <span className="lg:text-pink-500 text-white">25</span>
             </h2>
-            <p className="text-lg font-semibold mt-2">Women Researchers in Electronics and Computing</p>
-            <p className="text-gray-500 mt-1">Department of Electronics and Communication Engineering</p>
+            <p className="text-lg font-semibold mt-2">
+              Women Researchers in Electronics and Computing
+            </p>
+            <p className="text-gray-500 mt-1">
+              Department of Electronics and Communication Engineering
+            </p>
           </div>
         </div>
 
@@ -54,12 +59,20 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex justify-center lg:justify-end mt-6 space-x-4 relative z-10">
-            <a href="#" aria-label="Instagram" className="text-gray-700 hover:text-pink-500">
-                <img src="/Instagram.png" alt="insta"></img>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="text-gray-700 hover:text-pink-500"
+            >
+              <img src="/Instagram.png" alt="insta"></img>
               <i className="fab fa-instagram text-2xl"></i>
             </a>
-            <a href="#" aria-label="Twitter"  className="text-gray-700 hover:text-pink-500">
-                <img src="/Twitter.png" alt="twitter"></img>
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="text-gray-700 hover:text-pink-500"
+            >
+              <img src="/Twitter.png" alt="twitter"></img>
               <i className="fab fa-twitter text-2xl"></i>
             </a>
           </div>

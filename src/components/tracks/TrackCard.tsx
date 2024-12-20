@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import Modal from "../utils/Modal";
@@ -20,19 +20,31 @@ const TrackCard = ({ name, img, chair, topics }: TrackCardProps) => {
           <h3 className="text-[#110e0e] text-xl font-semibold font-['Avenir LT Std'] tracking-wide mb-4">
             {name}
           </h3>
-          <button 
+          <button
             className="bg-white text-black text-base font-medium font-['Avenir LT Std'] tracking-wider px-4 py-2 rounded-md hover:bg-gray-200 transition w-max"
             onClick={() => setIsModalOpen(true)}
           >
             Learn more
           </button>
         </div>
-        
+
         <div className="p-10 bg-white rounded-xl shadow-md">
-          <Image alt={`Track image for ${name}`} height={100} width={100} src={img} className="object-cover rounded-lg" />
+          <Image
+            alt={`Track image for ${name}`}
+            height={100}
+            width={100}
+            src={img}
+            className="object-cover rounded-lg"
+          />
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} name={name} chair={chair} topics={topics} />
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        name={name}
+        chair={chair}
+        topics={topics}
+      />
     </>
   );
 };
