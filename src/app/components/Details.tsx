@@ -2,15 +2,16 @@ import React from "react";
 
 const Details = () => {
   const data = {
-    lastDate: "20 Feb, 2025",
-    initiationDaccept: "25 Mar, 2025",
-    coursesReady: "31 Mar, 2025",
-    lastAndReg: "8 Apr, 2025",
+    lastDate: "20 February, 2025",
+    initiationDaccept: "25 March, 2025",
+    coursesReady: "31 March, 2025",
+    lastAndReg: "8 April, 2025",
+    conf: "18-20 April, 2025"
   };
 
   return (
     <div
-      id="tracks"
+      id="details"
       className="w-full min-h-screen bg-white flex flex-col justify-start items-center"
     >
       <h1 className="text-3xl w-full text-center lg:text-4xl mt-20 mb-10">DETAILS ABOUT THE CONFERENCE</h1>
@@ -70,6 +71,12 @@ const Details = () => {
               Last date of registration
             </h3>
             <p className="text-gray-700">{data.lastAndReg}</p>
+          </div>
+          <div className="bg-white shadow-md rounded-lg p-4">
+            <h3 className="text-lg font-medium text-pink-500">
+              Date of Conference
+            </h3>
+            <p className="text-gray-700">{data.conf}</p>
           </div>
         </div>
       </div>
