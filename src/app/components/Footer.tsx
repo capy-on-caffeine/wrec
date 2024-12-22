@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex justify-center lg:justify-end mt-6 space-x-4 relative z-10">
+          {/* <div className="flex justify-center lg:justify-end mt-6 space-x-4 relative z-10">
             <a
               href="#"
               aria-label="Instagram"
@@ -75,7 +75,7 @@ const Footer = () => {
               <img src="/Twitter.png" alt="twitter"></img>
               <i className="fab fa-twitter text-2xl"></i>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
