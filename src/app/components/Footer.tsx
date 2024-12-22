@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="mt-8 lg:mt-0 relative">
           {/* Dark Pink Blob */}
           <svg
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400%] h-[400%] -z-10"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600%] h-[600%] -z-10"
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex justify-center lg:justify-end mt-6 space-x-4 relative z-10">
+          {/* <div className="flex justify-center lg:justify-end mt-6 space-x-4 relative z-10">
             <a
               href="#"
               aria-label="Instagram"
@@ -75,7 +75,7 @@ const Footer = () => {
               <img src="/Twitter.png" alt="twitter"></img>
               <i className="fab fa-twitter text-2xl"></i>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
