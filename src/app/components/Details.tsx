@@ -111,7 +111,7 @@ const Details = () => {
               Submission Platform
             </h3>
             <p className="text-gray-700">
-              All submissions must be made via our official submission platform.
+              All submissions must be made via Microsoft CMT.
               A placeholder for the submission link is provided below:
               <br />
               <a href="#" className="text-blue-500 cursor-pointer">
@@ -128,7 +128,7 @@ const Details = () => {
                 Submissions should strictly follow the WREC 2024 Paper Template
                 (available for download{" "}
                 <a
-                  href="#"
+                  href="https://www.ieee.org/conferences/publishing/templates.html"
                   className="cursor-pointer text-blue-500 hover:text-blue-600"
                 >
                   here
