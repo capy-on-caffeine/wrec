@@ -114,7 +114,7 @@ const Details = () => {
               All submissions must be made via Microsoft CMT.
               A placeholder for the submission link is provided below:
               <br />
-              <a href="#" className="text-blue-500 cursor-pointer">
+              <a href="https://cmt3.research.microsoft.com/WREC2025" className="text-blue-500 cursor-pointer">
                 Submit Your Paper Here
               </a>
             </p>
@@ -128,15 +128,16 @@ const Details = () => {
                 Submissions should strictly follow the WREC 2024 Paper Template
                 (available for download{" "}
                 <a
-                  href="https://www.ieee.org/conferences/publishing/templates.html"
+                  href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19338734/data/v1"
                   className="cursor-pointer text-blue-500 hover:text-blue-600"
+                  download={true}
                 >
                   here
                 </a>
                 ).
               </li>
               <li>
-                Papers must be written in English and should not exceed 8 pages,
+                Papers must be written in English and should not exceed 4-5 pages,
                 including references, figures, and appendices.
               </li>
               <li>
