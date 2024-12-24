@@ -10,12 +10,14 @@ import KeynoteSpeakers from "./components/KeynoteSpeakers";
 import Tutorials from "./components/Tutorials";
 import Committee from "@/components/committee/Committee";
 import Details from "./components/Details";
+import Marquee from "./components/Marquee";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <HeroSection />
+      <Marquee />
       <Details />
       <AboutUs />
       <Tracks />
