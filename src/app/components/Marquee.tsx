@@ -3,8 +3,7 @@ import React, { CSSProperties } from 'react';
 const Marquee = () => {
   const announcements = [
     { text: 'Call for paper submission is open. Submit your paper ', link: 'here', href: 'https://cmt3.research.microsoft.com/WREC2025' },
-    { text: 'WREC\'23 papers were published under Springer "LNEE" '},
-    { text: 'WREC\'25 has applied to publish under Springer' }
+    { text: "The proceedings of the WREC'23 Conference were published in Springer LNEE.. WREC'25 (applied for Springer)"}
   ];
 
   const styles: Record<string, CSSProperties> = {
