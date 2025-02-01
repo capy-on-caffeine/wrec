@@ -5,7 +5,7 @@ import React from "react";
 
 const Details = () => {
   const data = {
-    lastDate: "20 February, 2025",
+    lastDate: "15 February, 2025",
     initiationDaccept: "25 March, 2025",
     coursesReady: "31 March, 2025",
     lastAndReg: "8 April, 2025",
@@ -62,7 +62,7 @@ const Details = () => {
             <h3 className="text-lg font-medium text-pink-500">
               Foreign authors
             </h3>
-            <p className="text-gray-700">USD 100</p>
+            <p className="text-gray-700">USD 150</p>
           </div>
         </div>
 
@@ -137,8 +137,10 @@ const Details = () => {
                 ).
               </li>
               <li>
-                Papers must be written in English and should not exceed 4-5 pages,
-                including references, figures, and appendices.
+                Papers must be written in English.
+              </li>
+              <li>
+              The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$50 per page for Indians and foreigners, respectively.
               </li>
               <li>
                 All submissions will undergo a double-blind peer review process.
@@ -169,12 +171,17 @@ const Details = () => {
             </p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
-            <h3 className="text-lg font-medium text-pink-500">Formatting</h3>
-            <ul className="text-gray-700 list-disc list-inside">
+            <h3 className="text-lg font-medium text-pink-500">Award</h3>
+            {/* <ul className="text-gray-700 list-disc list-inside">
               <li>Accepted formats: PDF</li>
               <li>Font: Times New Roman, 10pt</li>
               <li>References: IEEE style</li>
-            </ul>
+            </ul> */}
+            <p className="text-gray-700">
+
+            Best paper award for every session.
+              </p>
+
           </div>
         </div>
       </div>
