@@ -64,7 +64,7 @@ const Navbar = () => {
               "ABOUT US",
               "TRACKS",
               "KEYNOTE SPEAKERS",
-              "TUTORIALS",
+              "EVENTS",
               "SCHEDULE",
               "COMMITTEE",
               "CONTACT",
