@@ -62,9 +62,9 @@ const Navbar = () => {
           <ul className="flex flex-col md:flex-row md:space-x-6">
             {[
               "ABOUT US",
-              "TRACKS",
-              "KEYNOTE SPEAKERS",
               "EVENTS",
+              "KEYNOTE SPEAKERS",
+              "TRACKS",
               "SCHEDULE",
               "COMMITTEE",
               "CONTACT",

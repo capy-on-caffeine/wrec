@@ -41,8 +41,13 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Date Card */}
-        <div className="w-64 lg:w-96 mx-auto lg:ml-10 flex-shrink-0">
+        {/* Cards Section */}
+        <div className="w-100 lg:w-96 mx-auto lg:ml-10 flex-shrink-0 flex flex-col items-center gap-8">
+          {/* Springer Card */}
+          <div className="w-100 h-90 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300 ">
+            <img src="/logo.jpeg" alt="Springer Logo" className="h-[200px] w-auto" />
+          </div>
+          {/* Date Card */}
           <div className="bg-white shadow-lg rounded-lg px-6 lg:py-12 py-6 border border-gray-100">
             <div className="text-center">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -69,7 +74,7 @@ const HeroSection = () => {
 const CircuitBackground = () => {
   return (
     <svg
-      className="absolute top-0 right-0 h-full w-1/2 text-gray-200 opacity-20"
+      className="absolute top-0 right-0 h-full w-1/2 text-gray-200 opacity-20 animate-spin-slow"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
     >
