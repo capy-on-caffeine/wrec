@@ -48,13 +48,13 @@ const Events = () => {
                                                         </a>
                                                 </p>
 
-                                                <p className="mb-4 text-gray-700 text-justify">
+                                                <div className="mb-4 text-gray-700 text-justify">
                                                         <strong>Important Dates for Special Sessions:</strong>
                                                         <ul className="list-disc ml-5">
                                                                 <li>Last date for submission of proposals: 28th February 2025</li>
                                                                 <li>Notification of decision: 5th March 2025 or before</li>
                                                         </ul>
-                                                </p>
+                                                </div>
                                                 <p className="text-gray-700 text-justify">
                                                         <strong>Complimentary Conference Registration: <br /><br />
                                                         </strong>
@@ -92,7 +92,7 @@ const Events = () => {
                                                 <p className="mb-4 text-gray-700 text-justify">
                                                         <strong>Workshop Proposal Format</strong>
                                                 </p>
-                                                <p className="mb-4 text-gray-700 text-justify">
+                                                <div className="mb-4 text-gray-700 text-justify">
                                                         <strong>Proposal Requirements: <br /><br />
                                                         </strong>
                                                         Each workshop proposal (maximum 5-6 pages) must include the following:
@@ -106,7 +106,7 @@ const Events = () => {
                                                                 <li>A description of the publicity and promotion plan</li>
                                                                 <li>A description of past versions of the workshop (if applicable)</li>
                                                         </ul>
-                                                </p>
+                                                </div>
                                                 <p className="mb-4 text-gray-700 text-justify">
                                                         <strong>How to Submit a Workshop Proposal?<br /><br />
                                                         </strong>
@@ -119,14 +119,14 @@ const Events = () => {
                                                         All workshop proposals will be peer-reviewed. The Workshop Chairs will make a final selection to ensure
                                                         variety and relevance to the conference attendees and to best fit the conference schedule.
                                                 </p>
-                                                <p className="text-gray-700 text-justify">
+                                                <div className="text-gray-700 text-justify">
                                                         <strong>Important Dates: <br /><br />
                                                         </strong>
                                                         <ul className="list-disc ml-5">
                                                                 <li>Proposal Submission Deadline: February 128, 2025</li>
                                                                 <li>Notification of Selection: March 5, 2025</li>
                                                         </ul>
-                                                </p>
+                                                </div>
                                         </motion.div>
                                 </div>
                         </div>
