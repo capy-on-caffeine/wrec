@@ -43,10 +43,6 @@ const HeroSection = () => {
 
         {/* Cards Section */}
         <div className="w-100 lg:w-96 mx-auto lg:ml-10 flex-shrink-0 flex flex-col items-center gap-8">
-          {/* Springer Card */}
-          <div className="w-100 h-90 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300 ">
-            <img src="/logo.jpeg" alt="Springer Logo" className="h-[200px] w-auto" />
-          </div>
           {/* Date Card */}
           <div className="bg-white shadow-lg rounded-lg px-6 lg:py-12 py-6 border border-gray-100">
             <div className="text-center">
@@ -54,7 +50,7 @@ const HeroSection = () => {
                 Conference Date
               </h3>
               <div className="text-2xl font-bold text-pink-600">
-                18-20 April, 2025
+                28 February-5 March, 2025
               </div>
             </div>
           </div>

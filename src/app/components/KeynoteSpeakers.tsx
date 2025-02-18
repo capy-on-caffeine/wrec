@@ -117,6 +117,24 @@ const KeynoteSpeakers: React.FC = () => {
       linkedin: "https://www.linkedin.com/in/sdravana/",
       website: "https://umexpert.um.edu.my/sri-devi",
     },
+    {
+      "name": "Dr. Anjali Awasthi",
+      "qualification": "Full Professor, Concordia Institute for Information Systems Engineering, Concordia University, Montreal",
+      "bio": "Dr. Awasthi is a professor specializing in operations research, data mining, and sustainable logistics. Her work focuses on optimizing mobility systems and supply chain management.",
+      "imageUrl": "/images/people/anjali_awasthi.jpg",
+      "twitter": "",
+      "linkedin": "",
+      "website": "https://users.encs.concordia.ca/~awasthi/"
+    },
+    {
+      "name": "Dr. Anita Singh",
+      "qualification": "Assistant Professor, Department of Computer Science, NIT Jalandhar",
+      "bio": "Dr. Singh is an academic specializing in machine learning, artificial intelligence, and big data analytics. Her research focuses on developing efficient algorithms for real-world applications in various domains.",
+      "imageUrl": "/images/people/anita.png",
+      "twitter": "",
+      "linkedin": "",
+      "website": "https://www.nitj.ac.in/faculty/anita_singh"
+    },
   ];
 
   return (
@@ -125,8 +143,8 @@ const KeynoteSpeakers: React.FC = () => {
         <h2 className="text-4xl font-extrabold text-center text-pink-600 mb-12">
           Keynote Speakers
         </h2>
-        <div className="w-4/5 flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="w-5/6 flex justify-center items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             {speakers.map((speaker, index) => (
               <motion.div
                 key={speaker.name}

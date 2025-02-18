@@ -9,7 +9,7 @@ const Announcements = () => {
   const styles: Record<string, CSSProperties> = {
     container: {
       width: '95%',
-      margin: '20px auto',
+      margin: '10px auto',
       backgroundColor: '#e3f2fd',
       borderRadius: '12px',
       boxShadow: '0 4px 8px rgba(0,0,0,0.1)',

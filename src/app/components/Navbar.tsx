@@ -31,6 +31,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <img src="/logo.jpeg" alt="Logo" className="w-14 h-14" />
+          <img src="/springer.png" alt="Springer" className="w-24 h-8" />
           <span className="text-xl font-bold">
             {`WREC'`}
             <span className="text-pink-500">25</span>
