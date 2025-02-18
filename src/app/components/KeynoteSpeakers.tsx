@@ -98,6 +98,15 @@ const KeynoteSpeakers: React.FC = () => {
       website: "",
     },
     {
+      "name": "Dr. Anjali Awasthi",
+      "qualification": "Full Professor, Concordia Institute for Information Systems Engineering, Concordia University, Montreal",
+      "bio": "Dr. Awasthi is a professor specializing in operations research, data mining, and sustainable logistics. Her work focuses on optimizing mobility systems and supply chain management.",
+      "imageUrl": "/images/people/anjali_awasthi.jpg",
+      "twitter": "",
+      "linkedin": "",
+      "website": "https://users.encs.concordia.ca/~awasthi/"
+    },
+    {
       name: "Dr. Gayatri Mehta",
       qualification:
         "Professor, Electrical Engineering Department, University of North Texas, USA",
@@ -116,15 +125,6 @@ const KeynoteSpeakers: React.FC = () => {
       twitter: "",
       linkedin: "https://www.linkedin.com/in/sdravana/",
       website: "https://umexpert.um.edu.my/sri-devi",
-    },
-    {
-      "name": "Dr. Anjali Awasthi",
-      "qualification": "Full Professor, Concordia Institute for Information Systems Engineering, Concordia University, Montreal",
-      "bio": "Dr. Awasthi is a professor specializing in operations research, data mining, and sustainable logistics. Her work focuses on optimizing mobility systems and supply chain management.",
-      "imageUrl": "/images/people/anjali_awasthi.jpg",
-      "twitter": "",
-      "linkedin": "",
-      "website": "https://users.encs.concordia.ca/~awasthi/"
     },
     {
       "name": "Dr. Anita Singh",

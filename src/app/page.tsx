@@ -7,10 +7,12 @@ import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import KeynoteSpeakers from "./components/KeynoteSpeakers";
-import Tutorials from "./components/Tutorials";
+// import Tutorials from "./components/Tutorials";
 import Committee from "@/components/committee/Committee";
 import Details from "./components/Details";
 import Marquee from "./components/Marquee";
+import Events from "./components/Events";
+
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
       <Marquee />
       <Details />
       <AboutUs />
+      <Events />
       <Tracks />
       <KeynoteSpeakers />
       {/* <Tutorials /> */}
