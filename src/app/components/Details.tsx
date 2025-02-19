@@ -1,11 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Details = () => {
   const data = {
-    lastDate: "15 February, 2025",
+    lastDate: "28 February, 2025",
     initiationDaccept: "25 March, 2025",
     coursesReady: "31 March, 2025",
     lastAndReg: "8 April, 2025",
@@ -140,7 +139,7 @@ const Details = () => {
                 Papers must be written in English.
               </li>
               <li>
-              The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$50 per page for Indians and foreigners, respectively.
+                The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$50 per page for Indians and foreigners, respectively.
               </li>
               <li>
                 All submissions will undergo a double-blind peer review process.
@@ -172,16 +171,9 @@ const Details = () => {
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
             <h3 className="text-lg font-medium text-pink-500">Award</h3>
-            {/* <ul className="text-gray-700 list-disc list-inside">
-              <li>Accepted formats: PDF</li>
-              <li>Font: Times New Roman, 10pt</li>
-              <li>References: IEEE style</li>
-            </ul> */}
             <p className="text-gray-700">
-
-            Best paper award for every session.
-              </p>
-
+              Best paper award for every session.
+            </p>
           </div>
         </div>
       </div>
