@@ -123,7 +123,7 @@ const Events = () => {
                                                         <strong>Important Dates: <br /><br />
                                                         </strong>
                                                         <ul className="list-disc ml-5">
-                                                                <li>Proposal Submission Deadline: February 128, 2025</li>
+                                                                <li>Proposal Submission Deadline: February 28, 2025</li>
                                                                 <li>Notification of Selection: March 5, 2025</li>
                                                         </ul>
                                                 </div>

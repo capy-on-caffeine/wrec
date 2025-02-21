@@ -128,12 +128,12 @@ const KeynoteSpeakers: React.FC = () => {
     },
     {
       "name": "Dr. Anita Singh",
-      "qualification": "Assistant Professor, Department of Computer Science, NIT Jalandhar",
-      "bio": "Dr. Singh is an academic specializing in machine learning, artificial intelligence, and big data analytics. Her research focuses on developing efficient algorithms for real-world applications in various domains.",
+      "qualification": "Associate Professor and Department Chair, Bioengineering Department, Temple University,Philadelphia,USA",
+      "bio": "Dr. Singh is an academic specializing in bioengineering, with a focus on neonatal brachial plexus injuries. Her research involves developing computational models to simulate birthing scenarios and studying injury biomarkers for early intervention. She is dedicated to student mentorship and is exploring the use of virtual reality to enhance learning experiences.",
       "imageUrl": "/images/people/anita.png",
       "twitter": "",
       "linkedin": "",
-      "website": "https://www.nitj.ac.in/faculty/anita_singh"
+      "website": "https://engineering.temple.edu/about/faculty-staff/anita-singh-tur44252"
     },
   ];
 
