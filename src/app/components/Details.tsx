@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 
 const Details = () => {
   const data = {
-    lastDate: "28 February, 2025",
+    lastDate: "15 March, 2025",
     initiationDaccept: "25 March, 2025",
     coursesReady: "31 March, 2025",
     lastAndReg: "8 April, 2025",

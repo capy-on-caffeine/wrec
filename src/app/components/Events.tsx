@@ -43,7 +43,7 @@ const Events = () => {
 
                                                 {/* Link to Download Special Session Format */}
                                                 <p className="mb-6 text-center">
-                                                        <a href="/WREC2025Spcial Session Page.docx" className="text-blue-600 hover:underline" download>
+                                                        <a href="/WREC2025Special Session Page.docx" className="text-blue-600 hover:underline" download>
                                                                 Download Special Session Format
                                                         </a>
                                                 </p>
