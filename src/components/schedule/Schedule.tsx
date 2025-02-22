@@ -81,7 +81,7 @@ const Schedule: React.FC = () => {
         </div>
       );
     } else {
-      return <h1>Scheudule to be declared</h1>;
+      return <h1>Schedule to be declared</h1>;
     }
   };
 
