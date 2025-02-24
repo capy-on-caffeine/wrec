@@ -35,13 +35,22 @@ const Tracks = () => {
     },
   ];
 
-  const specialTrack = {
-    name: "Emerging Frontiers in VLSI",
-    img: "/images/special_track_img.png",
-    chair: "Dr. Neha Paras",
-    designation: "Assistant Professor",
-    affiliation: "Jawaharlal Nehru University (Special Centre for Nanoscience)",
-  };
+  const specialTracks = [
+    {
+      name: "Emerging Frontiers in VLSI",
+      img: "/images/special_track_img.png",
+      chair: "Dr. Neha Paras",
+      designation: "Assistant Professor",
+      affiliation: "Jawaharlal Nehru University (Special Centre for Nanoscience)",
+    },
+    {
+      name: "Beyond Algorithms: The Next Wave of Generative AI",
+      img: "/images/genAI.jpg",
+      chair: "Organized and Chaired by Dr. Tanu Wadhera, Dr. Satnam Kaur, Dr. Amandeep Kaur",
+      designation: "",
+      affiliation: "",
+    },
+  ];
 
   return (
     <div
@@ -57,16 +66,19 @@ const Tracks = () => {
 
       {/* Special Track Section */}
       <h1 className="text-3xl mt-20 mb-5">Special Tracks</h1>
-      <div className="w-full lg:w-5/6 flex flex-col items-center">
-        <TrackCard
-          name={specialTrack.name}
-          img={specialTrack.img}
-          chair={specialTrack.chair}
-          topics={[
-            `Designation: ${specialTrack.designation}`,
-            `Affiliation: ${specialTrack.affiliation}`,
-          ]}
-        />
+      <div className="w-full lg:w-5/6 flex flex-col items-center gap-10">
+        {specialTracks.map((track, index) => (
+          <TrackCard
+            key={index}
+            name={track.name}
+            img={track.img}
+            chair={track.chair}
+            topics={track.designation || track.affiliation ? [
+              `Designation: ${track.designation}`,
+              `Affiliation: ${track.affiliation}`,
+            ] : []}
+          />
+        ))}
       </div>
     </div>
   );
