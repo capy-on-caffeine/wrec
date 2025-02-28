@@ -15,20 +15,15 @@ const TrackCard = ({ name, img, chair, topics }: TrackCardProps) => {
 
   return (
     <>
-      <div className="relative w-3/4 lg:w-[30%] h-2/5 bg-[#ff95b6] rounded-2xl flex items-center justify-between p-6 shadow-lg box-border z-0">
-        <div className="flex flex-col justify-center">
-          <h3 className="text-[#110e0e] text-xl font-semibold font-['Avenir LT Std'] tracking-wide mb-4">
-            {name}
-          </h3>
-          <button
-            className="bg-white text-black text-base font-medium font-['Avenir LT Std'] tracking-wider px-4 py-2 rounded-md hover:bg-gray-200 transition w-max"
-            onClick={() => setIsModalOpen(true)}
-          >
-            Learn more
-          </button>
-        </div>
+      <div className="relative w-11/12 lg:w-[28%] h-auto bg-gradient-to-br from-[#ff95b6] to-[#ff7c98] rounded-2xl flex flex-col items-center p-6 shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out">
 
-        <div className="p-10 bg-white rounded-xl shadow-md">
+        {/* Heading */}
+        <h3 className="text-[#110e0e] text-xl font-bold font-['Avenir LT Std'] tracking-wide mb-4 text-center">
+          {name}
+        </h3>
+
+        {/* Image */}
+        <div className="w-24 h-24 bg-white rounded-xl shadow-md border-2 border-gray-200 flex items-center justify-center p-2 mb-4">
           <Image
             alt={`Track image for ${name}`}
             height={100}
@@ -37,7 +32,20 @@ const TrackCard = ({ name, img, chair, topics }: TrackCardProps) => {
             className="object-cover rounded-lg"
           />
         </div>
+
+        {/* Learn More Button */}
+        <button
+          className="bg-gradient-to-r from-white to-gray-100 text-black text-base font-bold tracking-wide px-5 py-2 
+             rounded-lg transition-all duration-300 ease-in-out shadow-md 
+             hover:from-[#ff95b6] hover:to-[#ff7c98] hover:text-white 
+             hover:scale-105 hover:shadow-lg"
+          onClick={() => setIsModalOpen(true)}
+        >
+          Learn More
+        </button>
       </div>
+
+      {/* Modal */}
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
