@@ -34,22 +34,22 @@ const ContactUs = () => {
             <img
               src="/random_img1.jpg" // Update with your image paths
               alt="Contact Image 1"
-              className="rounded-lg w-2/3 h-full"
+              className="rounded-lg w-full h-full"
             />
             <img
               src="/random_img2.jpeg"
               alt="Contact Image 2"
-              className="rounded-lg w-2/3 h-full"
+              className="rounded-lg w-3/4 h-full"
             />
             <img
               src="/random_img3.jpg"
               alt="Contact Image 3"
-              className="rounded-lg w-2/3 h-full "
+              className="rounded-lg w-full h-full "
             />
             <img
               src="/Frame 20.png"
               alt="Contact Image 4"
-              className="rounded-lg w-2/3 h-full"
+              className="rounded-lg w-3/4 h-full"
             />
           </div>
 
