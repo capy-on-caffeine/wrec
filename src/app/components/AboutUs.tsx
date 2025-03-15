@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion"; // Assuming you use framer-motion for animations
 
 const AboutUs = () => {
@@ -25,10 +26,12 @@ const AboutUs = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <img
-              src="/about_img.jpg" 
+            <Image
+              src="/about_img.jpg"
               alt="Woman in Science"
-              className="w-full h-auto rounded object-cover items-center"
+              width={300} // Set an appropriate width
+              height={300} // Set an appropriate height
+              className="w-full h-auto rounded object-cover"
             />
           </motion.div>
 

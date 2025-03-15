@@ -1,67 +1,24 @@
-import React, { CSSProperties } from 'react';
+import React, { FC } from 'react';
+import Image from 'next/image';
 
-const Announcements = () => {
-  const styles: Record<string, CSSProperties> = {
-    container: {
-      width: '90%',
-      maxWidth: '100%',
-      margin: '10px auto',
-      backgroundColor: '#F4F8FC',
-      borderRadius: '12px',
-      boxShadow: '0 6px 12px rgba(0,0,0,0.1)',
-      padding: '15px',
-      textAlign: 'center',
-      fontFamily: 'Arial, sans-serif'
-    },
-    announcement: {
-      marginBottom: '15px',
-      fontSize: '16px',
-      fontWeight: '500',
-      color: '#333',
-      lineHeight: '1.5'
-    },
-    link: {
-      color: '#1565c0',
-      textDecoration: 'none',
-      fontWeight: 'bold'
-    },
-    imageSection: {
-      marginTop: '25px',
-      textAlign: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-    image: {
-      width: '60%',
-      maxWidth: '200px',
-      borderRadius: '8px',
-      boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-      display: 'block'
-    },
-    heading: {
-      fontSize: '26px',
-      fontWeight: 'bold',
-      color: '#0D47A1',
-      marginBottom: '12px',
-      textAlign: 'center'
-    },
-    subText: {
-      fontSize: '20px',
-      fontWeight: 'bold',
-      color: '#D32F2F',
-      textAlign: 'center',
-      marginTop: '10px'
-    }
-  };
-
+const Announcements: FC = () => {
   return (
-    <div style={styles.container}>
-      <div style={styles.imageSection}>
-        <h1 style={styles.heading}>Proceedings Publication</h1>
-        <img src='/LNEE.jpg' alt="Proceedings Publication" style={styles.image} />
-        <p style={styles.subText}>SCOPUS Indexed Springer Book Series, "Lecture Notes in Networks and Systems"</p>
+    <div className="w-[90%] max-w-full mx-auto my-2 bg-[#F4F8FC] rounded-xl shadow-lg p-4 text-center font-sans">
+      <div className="mt-6 flex flex-col items-center justify-center">
+        <h1 className="text-2xl font-bold text-[#0D47A1] mb-3 text-center">
+          Proceedings Publication
+        </h1>
+        <Image 
+          src="/LNEE.jpg" 
+          alt="Proceedings Publication"
+          width={200} 
+          height={150} 
+          priority
+          className="w-[60%] max-w-[200px] rounded-lg shadow-md"
+        />
+        <p className="text-lg font-bold text-[#D32F2F] mt-3 text-center">
+          SCOPUS Indexed Springer Book Series, &quot;Lecture Notes in Networks and Systems&quot;
+        </p>
       </div>
     </div>
   );

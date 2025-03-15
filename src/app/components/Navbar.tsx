@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId: string): void => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -30,12 +31,9 @@ const Navbar = () => {
     <nav className="bg-white shadow-md relative md:fixed top-0 z-20 w-full">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.jpeg" alt="Logo" className="w-14 h-14" />
-          <img src="/springer.png" alt="Springer" className="w-24 h-8" />
-          <span className="text-xl font-bold">
-            {`WREC'`}
-            <span className="text-pink-500">25</span>
-          </span>
+          <Image src="/logo.jpeg" alt="Logo" width={56} height={56} />
+          <Image src="/springer.png" alt="Springer" width={96} height={32} />
+          <span className="text-xl font-bold">WREC&apos;25</span>
         </Link>
 
         <button className="block md:hidden" onClick={toggleMenu}>
@@ -72,10 +70,10 @@ const Navbar = () => {
             ].map((item, index) => (
               <li key={index}>
                 <Link
-                  href={`#${item.toLowerCase().replace(" ", "")}`}
+                  href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
                   className="relative group py-2 px-1 transition-all duration-300 ease-in-out hover:text-blue-500"
                   onClick={() =>
-                    scrollToSection(item.toLowerCase().replace(" ", ""))
+                    scrollToSection(item.toLowerCase().replace(/\s+/g, ""))
                   }
                 >
                   <span className="relative z-10 transform group-hover:scale-110 inline-block transition-transform duration-300 ease-in-out">

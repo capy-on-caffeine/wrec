@@ -51,8 +51,8 @@ const Events = () => {
                                                 <div className="mb-4 text-gray-700 text-justify">
                                                         <strong>Important Dates for Special Sessions:</strong>
                                                         <ul className="list-disc ml-5">
-                                                                <li>Last date for submission of proposals: 28th February 2025</li>
-                                                                <li>Notification of decision: 5th March 2025 or before</li>
+                                                                <li>Last date for submission of proposals: 25th February 2025</li>
+                                                                <li>Notification of decision: 31st March 2025 or before</li>
                                                         </ul>
                                                 </div>
                                                 <p className="text-gray-700 text-justify">
@@ -123,8 +123,8 @@ const Events = () => {
                                                         <strong>Important Dates: <br /><br />
                                                         </strong>
                                                         <ul className="list-disc ml-5">
-                                                                <li>Proposal Submission Deadline: February 28, 2025</li>
-                                                                <li>Notification of Selection: March 5, 2025</li>
+                                                                <li>Proposal Submission Deadline: February 25, 2025</li>
+                                                                <li>Notification of Selection: March 31, 2025</li>
                                                         </ul>
                                                 </div>
                                         </motion.div>
