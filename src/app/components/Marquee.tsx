@@ -17,7 +17,7 @@ const Announcements: FC = () => {
           className="w-[60%] max-w-[200px] rounded-lg shadow-md"
         />
         <p className="text-lg font-bold text-[#D32F2F] mt-3 text-center">
-          SCOPUS Indexed Springer Book Series, &quot;Lecture Notes in Networks and Systems&quot;
+          SCOPUS Indexed Springer Book Series, &quot;Lecture Notes in Electrical Engineering&quot;
         </p>
       </div>
     </div>
