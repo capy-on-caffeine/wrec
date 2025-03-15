@@ -5,8 +5,8 @@ import React from "react";
 const Details = () => {
   // Define the data type explicitly
   const data = {
-    lastDate: "15 March, 2025",
-    initiationAccept: "25 March, 2025",
+    lastDate: "25 March, 2025",
+    initiationAccept: "31 March, 2025",
     coursesReady: "31 March, 2025",
     lastAndReg: "8 April, 2025",
     conf: "18-20 April, 2025",
