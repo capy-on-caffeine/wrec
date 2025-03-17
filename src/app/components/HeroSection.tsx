@@ -35,9 +35,12 @@ const HeroSection = () => {
               <button className="bg-gray-800 text-white text-lg px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
                 Register
               </button>
-              <button className="bg-white text-lg text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
-                Sponsored By
-              </button>
+              <a href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" target="_blank" rel="noopener noreferrer">
+                <button className="bg-white text-lg text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
+                  Submit Here
+                </button>
+              </a>
+
             </div>
           </div>
         </div>
