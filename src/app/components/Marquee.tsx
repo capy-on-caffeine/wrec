@@ -1,27 +1,39 @@
-import React, { FC } from 'react';
-import Image from 'next/image';
+import React from "react";
 
-const Announcements: FC = () => {
-  return (
-    <div className="w-[90%] max-w-full mx-auto my-2 bg-[#F4F8FC] rounded-xl shadow-lg p-4 text-center font-sans">
-      <div className="mt-6 flex flex-col items-center justify-center">
-        <h1 className="text-2xl font-bold text-[#0D47A1] mb-3 text-center">
-          Proceedings Publication
-        </h1>
-        <Image 
-          src="/LNEE.jpg" 
-          alt="Proceedings Publication"
-          width={200} 
-          height={150} 
-          priority
-          className="w-[60%] max-w-[200px] rounded-lg shadow-md"
-        />
-        <p className="text-lg font-bold text-[#D32F2F] mt-3 text-center">
-          SCOPUS Indexed Springer Book Series, &quot;Lecture Notes in Electrical Engineering&quot;
-        </p>
-      </div>
-    </div>
-  );
+const Marquee: React.FC = () => {
+        const marqueeText = [
+                "Authors should prepare their papers using Springer's LaTeX or Word templates.          ",
+                "Each paper must be accompanied by a Springer Nature Licence to Publish agreement.          ",
+                "The corresponding author is responsible for signing the agreement on behalf of all co-authors.            ",
+                "Once submitted, changes to authorship, such as adding or removing authors, are not permitted.             ",
+                "Springer provides guidelines to ensure uniformity and quality in conference proceedings.             ",
+                "Authors are encouraged to adhere strictly to the provided formatting instructions.             ",
+                "Timely submission of all required documents is crucial for the publication schedule.           ",
+                "For detailed guidelines and templates, visit Springer's official website.             ",
+        ];
+
+        return (
+                <div className="relative overflow-hidden w-full bg-gray-900 text-gray-100 py-2 border-y border-gray-700">
+                        {/* Gradient Fade Edges */}
+                        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent z-10 pointer-events-none"></div>
+                        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-900 via-gray-900/60 to-transparent z-10 pointer-events-none"></div>
+
+                        {/* Marquee Text */}
+                        <div
+                                className="inline-block animate-marquee whitespace-nowrap text-sm font-medium tracking-wide hover:[animation-play-state:paused]"
+                                style={{
+                                        animationDuration: `88s`,
+                                        animationIterationCount: "infinite",
+                                }}
+                        >
+                                {marqueeText.map((text, index) => (
+                                        <span key={index} className="mr-8">
+                                                {text}
+                                        </span>
+                                ))}
+                        </div>
+                </div>
+        );
 };
 
-export default Announcements;
+export default Marquee;

@@ -33,8 +33,8 @@ const Navbar = () => {
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/logo.jpeg" alt="Logo" width={56} height={56} />
           <Image src="/springer.png" alt="Springer" width={130} height={40} />
-          <span className="text-2xl font-bold">WREC&apos;</span>
-          <span className="lg:text-pink-500 font-bold text-2xl text-white">25</span>
+          <span className="text-xl font-bold">WREC&apos;</span>
+          <span className="lg:text-pink-500 font-bold text-xl text-white">25</span>
         </Link>
 
         <button className="block md:hidden" onClick={toggleMenu}>
