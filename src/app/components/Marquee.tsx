@@ -2,6 +2,7 @@ import React from "react";
 
 const Marquee: React.FC = () => {
         const marqueeText = [
+                "Participation is not limited to women candidates only. It is open for all the researchers in specified areas.",
                 "Authors should prepare their papers using Springer's LaTeX or Word templates.",
                 "Each paper must be accompanied by a Springer Nature Licence to Publish agreement.",
                 "The corresponding author is responsible for signing the agreement on behalf of all co-authors.",
