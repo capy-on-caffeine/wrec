@@ -2,7 +2,7 @@ import React from "react";
 
 const AuthorGuideline = () => {
         return (
-                <section className="p-8 bg-white text-gray-900 max-w-4xl mx-auto rounded-2xl shadow-lg">
+                <section id="authorguidelines" className="p-8 bg-white text-gray-900 max-w-4xl mx-auto rounded-2xl shadow-lg">
                         <h1 className="text-4xl font-bold mb-6 text-center">
                                 <span className="text-pink-500">AUHTOR</span> GUIDELINES
                         </h1>
