@@ -11,7 +11,7 @@ import KeynoteSpeakers from "./components/KeynoteSpeakers";
 import Committee from "@/components/committee/Committee";
 import Details from "./components/Details";
 import Marquee from "./components/Marquee";
-import Events from "./components/AuthorGuideline";
+import AuthorGuideline from "./components/AuthorGuideline";
 
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
       <Marquee />
       <Details />
       <AboutUs />
-      <Events />
+      <AuthorGuideline />
       <KeynoteSpeakers />
       <Tracks />
       {/* <Tutorials /> */}
