@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="bg-pink-50 min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-10">
-      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10 flex flex-col lg:flex-row gap-8 items-center my-2">
+    <div className="bg-pink-50 max-h-screen flex items-center justify-center relative overflow-hidden pt-10 pb-5">
+      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10 flex flex-col lg:flex-row gap-8 items-center my-1">
         <div className="flex-grow">
           <div className="animate-fade-in-up">
             <h2 className="text-gray-800 mb-4">
@@ -40,17 +40,16 @@ const HeroSection = () => {
                   Submit Here
                 </button>
               </a>
-
             </div>
           </div>
         </div>
 
         {/* Cards Section */}
-        <div className="w-100 lg:w-96 mx-auto lg:ml-10 flex flex-col gap-4 items-center">
+        <div className="w-100 lg:w-96 mx-auto lg:ml-10 flex flex-col gap-2 items-center">
           {/* Date Card */}
-          <div className="bg-white shadow-lg rounded-lg px-6 lg:py-12 py-6 border border-gray-100">
+          <div className="bg-white shadow-lg rounded-lg px-4 lg:py-12 py-1 border border-gray-100">
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-1">
                 Conference Date
               </h3>
               <div className="text-2xl font-bold text-pink-600">
@@ -59,8 +58,8 @@ const HeroSection = () => {
             </div>
           </div>
           {/* springer card */}
-          <div className="w-[90%] max-w-full mx-auto my-2 bg-[#F4F8FC] rounded-xl shadow-lg p-4 text-center font-sans">
-            <div className="mt-4 flex flex-col items-center justify-center">
+          <div className="w-[90%] max-w-full mx-auto my-2 bg-[#F4F8FC] rounded-xl shadow-lg p-3 text-center font-sans">
+            <div className="mt-1 flex flex-col items-center justify-center">
               <h1 className="text-2xl font-bold text-[#0D47A1] mb-3 text-center">
                 Proceedings Publication
               </h1>
@@ -73,7 +72,10 @@ const HeroSection = () => {
                 className="w-[60%] max-w-[200px] rounded-lg shadow-md"
               />
               <p className="text-lg font-bold text-[#D32F2F] mt-3 text-center">
-                SCOPUS Indexed Springer Book Series, &quot;Lecture Notes in Electrical Engineering&quot;
+              <span className="text-[#423d3d]">
+                SCOPUS Indexed Springer Book Series,
+              </span>
+                &quot;Lecture Notes in Electrical Engineering&quot;
               </p>
             </div>
           </div>

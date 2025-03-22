@@ -19,9 +19,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Add smooth scrolling behavior to the entire page
     document.documentElement.style.scrollBehavior = "smooth";
-
     return () => {
       document.documentElement.style.scrollBehavior = "auto";
     };
@@ -31,10 +29,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md relative md:fixed top-0 z-20 w-full">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo.jpeg" alt="Logo" width={56} height={56} />
-          <Image src="/springer.png" alt="Springer" width={130} height={40} />
-          <span className="text-2xl font-bold">WREC&apos;</span>
-          <span className="lg:text-pink-500 font-bold text-2xl text-white">25</span>
+          <Image src="/logo.jpeg" alt="Logo" width={46} height={46} />
+          <Image src="/springer.png" alt="Springer" width={140} height={40} />
+          <span className="text-[1.35rem] font-bold">WREC&apos;</span>
+          <span className="lg:text-pink-500 font-bold text-[1.35rem] text-white">25</span>
         </Link>
 
         <button className="block md:hidden" onClick={toggleMenu}>
@@ -61,8 +59,8 @@ const Navbar = () => {
         >
           <ul className="flex flex-col md:flex-row md:space-x-6">
             {[
-              "ABOUT US",
-              "EVENTS",
+              "ABOUT",
+              "AUTHOR GUIDELINES",
               "KEYNOTE SPEAKERS",
               "TRACKS",
               "SCHEDULE",
@@ -72,7 +70,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
-                  className="relative group py-2 px-1 transition-all duration-300 ease-in-out hover:text-blue-500"
+                  className="relative group py-1 px-1 transition-all duration-300 ease-in-out hover:text-blue-500"
                   onClick={() =>
                     scrollToSection(item.toLowerCase().replace(/\s+/g, ""))
                   }

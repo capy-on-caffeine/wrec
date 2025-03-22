@@ -3,7 +3,6 @@
 import React from "react";
 
 const Details = () => {
-  // Define the data type explicitly
   const data = {
     lastDate: "25 March, 2025",
     initiationAccept: "31 March, 2025",
@@ -12,14 +11,12 @@ const Details = () => {
     conf: "18-20 April, 2025",
   };
 
-  // Smooth scrolling function
   const scrollToSection = (sectionId: string): void => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
 
   return (
     <div id="details" className="w-full min-h-screen bg-white flex flex-col justify-start items-center">
@@ -27,9 +24,11 @@ const Details = () => {
         DETAILS ABOUT THE CONFERENCE
       </h1>
 
-      <div className="w-5/6 h-3/5 flex justify-center items-start flex-wrap gap-10">
+      {/* Parent container */}
+      <div className="w-5/6 flex flex-wrap justify-center items-start gap-10">
+
         {/* Fee Details Section */}
-        <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full max-w-lg mx-auto mt-10 flex flex-col gap-4">
+        <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full md:w-[45%] flex flex-col gap-4">
           <h2 className="text-center w-full text-xl font-bold">Fee for the conference</h2>
           {[
             { title: "Students", price: "Rs. 3000 + GST" },
@@ -47,7 +46,7 @@ const Details = () => {
         </div>
 
         {/* Important Dates Section */}
-        <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full max-w-lg mx-auto mt-10 flex flex-col gap-4">
+        <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full md:w-[45%] flex flex-col gap-4">
           <h2 className="text-center w-full text-xl font-bold">Important dates</h2>
           {[
             { title: "Last date for paper submission", date: data.lastDate },
@@ -62,6 +61,7 @@ const Details = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

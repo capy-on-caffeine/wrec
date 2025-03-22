@@ -10,9 +10,8 @@ import KeynoteSpeakers from "./components/KeynoteSpeakers";
 // import Tutorials from "./components/Tutorials";
 import Committee from "@/components/committee/Committee";
 import Details from "./components/Details";
-import Mar from "./components/Mar";
 import Marquee from "./components/Marquee";
-import Events from "./components/Events";
+import Events from "./components/AuthorGuideline";
 
 
 const Home = () => {
@@ -21,12 +20,11 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <Marquee />
-      {/* <Mar /> */}
       <Details />
       <AboutUs />
       <Events />
-      <Tracks />
       <KeynoteSpeakers />
+      <Tracks />
       {/* <Tutorials /> */}
       <Schedule />
       <Committee />
