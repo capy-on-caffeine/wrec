@@ -29,7 +29,7 @@ const AuthorGuideline = () => {
                                 <ul className="list-disc list-inside space-y-2 text-gray-800">
                                         <li>The paper length must be 6-10 pages. For additional pages (upto 2 pages), the authors have to pay Rs. 1000/- or $50 per page.</li>
                                         <li>Papers must be written in English.</li>
-                                        <li>Use the Springer LNCS template (LaTeX or Word formats).</li>
+                                        <li>Use the Springer LNCS <a href="https://www.springer.com/in/authors-editors/conference-proceedings/conference-proceedings-guidelines?srsltid=AfmBOorw_ZSBiaoiVl3dSPSF9Rh16Lc92FRUViJzLzOq2V1xJls0f6NT">template </a>(LaTeX or Word formats).</li>
                                         <li>All figures and tables should be clear, legible, and numbered.</li>
                                         <li>References must adhere to the Springer citation style.</li>
                                 </ul>
