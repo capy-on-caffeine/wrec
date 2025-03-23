@@ -140,8 +140,8 @@ const KeynoteSpeakers: React.FC = () => {
   return (
     <section id="keynotespeakers" className="bg-white py-16">
       <div className="container mx-auto px-4 flex flex-col justify-center items-center">
-        <h2 className="text-4xl font-extrabold text-center text-pink-600 mb-12">
-          Keynote Speakers
+        <h2 className="text-4xl font-bold text-center mb-12">
+        <span className="text-pink-500 underline">KEYNOTE</span> SPEAKERS
         </h2>
         <div className="w-5/6 flex justify-center items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
