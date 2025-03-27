@@ -102,7 +102,7 @@ const Committee = () => {
       className="w-full py-16 bg-white flex flex-col justify-start items-center"
     >
       {/* Heading for the Committee Section */}
-      <h1 className="text-4xl font-bold mb-10">CONFERENCE COMMITTEE</h1>
+      <h1 className="text-4xl font-bold mb-10 text-center">CONFERENCE COMMITTEE</h1>
 
       <div className="max-w-3xl w-full mx-auto p-4 bg-white rounded shadow-md">
         {Object.keys(orgmembers).map((key, index) => (

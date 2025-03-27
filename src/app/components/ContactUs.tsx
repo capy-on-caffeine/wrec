@@ -32,7 +32,7 @@ const ContactUs = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row items-start justify-between">
           {/* Image Section */}
-          <div className="grid grid-cols-2 gap-4 lg:w-1/2 mb-8 lg:mb-0">
+          <div className="grid grid-cols-2 gap-4 w-full lg:w-1/2 mb-8 lg:mb-0">
             <Image
               src="/random_img1.jpg"
               alt="Contact Image 1"

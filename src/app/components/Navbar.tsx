@@ -2,6 +2,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
+
+const NAV_ITEMS = [
+  { label: "ABOUT", id: "about" },
+  { label: "AUTHOR GUIDELINES", id: "authorguidelines" },
+  { label: "KEYNOTE SPEAKERS", id: "keynotespeakers" },
+  { label: "TRACKS", id: "tracks" },
+  { label: "SCHEDULE", id: "schedule" },
+  { label: "COMMITTEE", id: "committee" },
+  { label: "CONTACT", id: "contact" }
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,72 +25,111 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // Close mobile menu
     }
-    setIsOpen(false); // Close the mobile menu after clicking
   };
 
-  useEffect(() => {
-    document.documentElement.style.scrollBehavior = "smooth";
-    return () => {
-      document.documentElement.style.scrollBehavior = "auto";
-    };
-  }, []);
-
   return (
-    <nav className="bg-white shadow-md relative md:fixed top-0 z-20 w-full">
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo.jpeg" alt="Logo" width={46} height={46} />
-          <Image src="/springer.png" alt="Springer" width={140} height={40} />
-          <span className="text-[1.35rem] font-bold">WREC&apos;</span>
-          <span className="lg:text-pink-500 font-bold text-[1.35rem] text-white">25</span>
+    <nav 
+      id="navbar"
+      className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300"
+    >
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo Section - Visible on both mobile and desktop */}
+        <Link href="/" className="flex items-center space-x-3">
+          <Image 
+            src="/logo.jpeg" 
+            alt="Logo" 
+            width={46} 
+            height={46} 
+            className="rounded-full"
+          />
+          <div className="flex items-center space-x-2">
+            <Image 
+              src="/springer.png" 
+              alt="Springer" 
+              width={140} 
+              height={40} 
+              className="hidden md:block"
+            />
+            <div className="flex items-center">
+              <span className="text-lg md:text-xl font-bold text-gray-800">WREC&apos;</span>
+              <span className="text-lg md:text-xl font-bold text-pink-500">25</span>
+            </div>
+          </div>
         </Link>
 
-        <button className="block md:hidden" onClick={toggleMenu}>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+        {/* Mobile Menu Toggle */}
+        <button 
+          onClick={toggleMenu} 
+          className="md:hidden text-gray-700 focus:outline-none"
+          aria-label="Toggle mobile menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        <div
-          className={`md:flex md:items-center md:justify-end md:space-x-6 ${
-            isOpen ? "block" : "hidden"
-          } `}
-        >
-          <ul className="flex flex-col md:flex-row md:space-x-6">
-            {[
-              "ABOUT",
-              "AUTHOR GUIDELINES",
-              "KEYNOTE SPEAKERS",
-              "TRACKS",
-              "SCHEDULE",
-              "COMMITTEE",
-              "CONTACT",
-            ].map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
-                  className="relative group py-1 px-1 transition-all duration-300 ease-in-out hover:text-blue-500"
-                  onClick={() =>
-                    scrollToSection(item.toLowerCase().replace(/\s+/g, ""))
-                  }
+        {/* Navigation Links */}
+        <div className={`
+          fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out
+          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+          md:static md:transform-none md:block md:bg-transparent
+          flex flex-col
+        `}>
+          {/* Mobile Header with Logo and Close Button */}
+          <div className="md:hidden flex justify-between items-center p-4 border-b">
+            <div className="flex items-center space-x-3">
+              <Image 
+                src="/logo.jpeg" 
+                alt="Logo" 
+                width={46} 
+                height={46} 
+                className="rounded-full"
+              />
+              <div className="flex items-center space-x-2">
+                <Image 
+                  src="/springer.png" 
+                  alt="Springer" 
+                  width={140} 
+                  height={40} 
+                />
+                <div className="flex items-center">
+                  <span className="text-lg font-bold text-gray-800">WREC&apos;</span>
+                  <span className="text-lg font-bold text-pink-500">25</span>
+                </div>
+              </div>
+            </div>
+            <button 
+              onClick={toggleMenu} 
+              className="text-gray-700 focus:outline-none"
+              aria-label="Close mobile menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
+          {/* Navigation Items */}
+          <ul className="flex flex-col items-center justify-center space-y-6 mt-8 md:mt-0 md:space-y-0 md:flex-row md:space-x-4 h-full">
+            {NAV_ITEMS.map((item) => (
+              <li key={item.id} className="text-center w-full md:w-auto">
+                <button
+                  onClick={() => scrollToSection(item.id)}
+                  className="
+                    text-gray-700 hover:text-pink-500 
+                    font-medium text-lg md:text-base 
+                    transition-colors duration-300 
+                    relative group w-full md:w-auto
+                    py-2 md:py-1
+                  "
                 >
-                  <span className="relative z-10 transform group-hover:scale-110 inline-block transition-transform duration-300 ease-in-out">
-                    {item}
+                  <span className="relative">
+                    {item.label}
+                    <span className="
+                      absolute bottom-0 left-0 w-full h-0.5 
+                      bg-pink-500 scale-x-0 group-hover:scale-x-100 
+                      transition-transform duration-300 origin-left
+                    "></span>
                   </span>
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
