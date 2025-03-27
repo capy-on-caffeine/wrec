@@ -39,9 +39,15 @@ const HeroSection = () => {
             </div>
             
             <div className="flex justify-center lg:justify-start space-x-4">
+            <a 
+                href="https://www.nitj.ac.in/events_registration/ic_wrec_2025/login" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
               <button className="bg-gray-800 text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
                 Register
               </button>
+              </a>
               <a 
                 href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" 
                 target="_blank" 
