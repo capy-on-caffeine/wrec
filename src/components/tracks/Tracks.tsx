@@ -55,9 +55,9 @@ const Tracks = () => {
   return (
     <div
       id="tracks"
-      className="w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col justify-start items-center"
+      className="w-full min-h-screen bg-gradient-to-r from-[#FFE1EA] to-white flex flex-col justify-center items-center"
     >
-      <h1 className="text-5xl mt-20 mb-10">CONFERENCE TRACKS</h1>
+      <h1 className="text-5xl mt-20 mb-10 text-center">CONFERENCE TRACKS</h1>
       <div className="w-full min-h-screen lg:w-5/6 lg:h-2/5 flex flex-col lg:flex-row justify-center items-center lg:flex-wrap gap-10">
         {cardData.map((data, index) => (
           <TrackCard key={index} {...data} />
