@@ -3,42 +3,50 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="bg-pink-50 max-h-screen flex items-center justify-center relative overflow-hidden pt-10 pb-5">
-      <div className="container mx-auto px-4 ml-4 lg:ml-20 z-10 flex flex-col lg:flex-row gap-8 items-center my-1">
-        <div className="flex-grow">
+    <div 
+      id="about"
+      className="bg-pink-50 min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-24 pb-10"
+    >
+      <div className="container mx-auto px-4 lg:px-16 xl:px-24 z-10 flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-8">
+        {/* Content Section */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
           <div className="animate-fade-in-up">
-            <h2 className="text-gray-800 mb-4">
-              <span className="bg-pink-200 rounded-md text-lg font-bold px-3 py-2 mb-2">
+            <div className="mb-4">
+              <span className="bg-pink-200 rounded-md text-sm md:text-lg font-bold px-3 py-2 inline-block mb-4">
                 3rd International Conference
               </span>
-            </h2>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-2">
+            </div>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 leading-tight">
               Women Researchers in
               <br />
               Electronics and Computing
             </h1>
-            <h2 className="text-2xl md:text-4xl font-semibold text-gray-500 mb-6">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-gray-500 mb-6">
               on sustainable development goals
             </h2>
-            <div>
+            
+            <div className="mb-6">
               <p className="text-gray-500 mb-2">Presented by</p>
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 Department of Electronics and Communication Engineering and
                 Department of Computer Science and Engineering
               </p>
+              <p className="text-gray-800 text-sm md:text-base mt-2">
+                Dr B R Ambedkar National Institute of Technology, Jalandhar,
+                Punjab, India
+              </p>
             </div>
-            <p className="text-gray-800 mb-8">
-              Dr B R Ambedkar National Institute of Technology, Jalandhar,
-              Punjab, India
-            </p>
-            <div className="flex justify-start space-x-4">
-              {/* <a href="https://www.nitj.ac.in/events_registration/ic_wrec_2025/login" target="_blank" rel="noopener noreferrer"> */}
-              <button className="bg-gray-800 text-white text-lg px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
+            
+            <div className="flex justify-center lg:justify-start space-x-4">
+              <button className="bg-gray-800 text-white text-base md:text-lg px-4 md:px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
                 Register
               </button>
-              {/* </a> */}
-              <a href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" target="_blank" rel="noopener noreferrer">
-                <button className="bg-white text-lg text-gray-800 px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
+              <a 
+                href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <button className="bg-white text-base md:text-lg text-gray-800 px-4 md:px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
                   Submit Here
                 </button>
               </a>
@@ -47,11 +55,11 @@ const HeroSection = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="w-100 lg:w-96 mx-auto lg:ml-10 flex flex-col gap-2 items-center">
+        <div className="w-full lg:w-1/2 max-w-md space-y-4">
           {/* Date Card */}
-          <div className="bg-white shadow-lg rounded-lg px-4 lg:py-12 py-1 border border-gray-100">
+          <div className="bg-white shadow-lg rounded-lg px-4 py-6 border border-gray-100">
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-800 mb-1">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Conference Date
               </h3>
               <div className="text-2xl font-bold text-pink-600">
@@ -59,37 +67,34 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          {/* springer card */}
-          <div className="w-[90%] max-w-full mx-auto my-2 bg-[#F4F8FC] rounded-xl shadow-lg p-3 text-center font-sans">
-            <div className="mt-1 flex flex-col items-center justify-center">
-              <h1 className="text-2xl font-bold text-[#0D47A1] mb-3 text-center">
-                Proceedings Publication
-              </h1>
+          
+          {/* Springer Card */}
+          <div className="bg-[#F4F8FC] rounded-xl shadow-lg p-6 text-center">
+            <h1 className="text-2xl font-bold text-[#0D47A1] mb-4">
+              Proceedings Publication
+            </h1>
+            <div className="flex justify-center mb-4">
               <Image
                 src="/LNEE.jpg"
                 alt="Proceedings Publication"
                 width={200}
                 height={150}
                 priority
-                className="w-[60%] max-w-[200px] rounded-lg shadow-md"
+                className="rounded-lg shadow-md max-w-full h-auto"
               />
-              <p className="text-lg font-bold text-[#D32F2F] mt-3 text-center">
+            </div>
+            <p className="text-lg font-bold text-[#D32F2F]">
               <span className="text-[#423d3d]">
                 SCOPUS Indexed Springer Book Series,
               </span>
-                &quot;Lecture Notes in Electrical Engineering&quot;
-              </p>
-            </div>
+              <br />
+              &quot;Lecture Notes in Electrical Engineering&quot;
+            </p>
           </div>
-          {/* springer card */}
         </div>
       </div>
 
-      {/* Background elements */}
-      <div
-        className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url('/Group.png')` }}
-      />
+      {/* Background Circuit Element */}
       <CircuitBackground />
     </div>
   );
@@ -98,7 +103,7 @@ const HeroSection = () => {
 const CircuitBackground = () => {
   return (
     <svg
-      className="absolute top-0 right-0 h-full w-1/2 text-gray-200 opacity-20 animate-spin-slow"
+      className="absolute top-0 right-0 h-full w-1/2 text-gray-200 opacity-20 animate-spin-slow hidden md:block"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
     >
