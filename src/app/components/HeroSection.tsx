@@ -48,15 +48,15 @@ const HeroSection = () => {
                 Register
               </button>
               </a>
-              <a 
+              {/* <a 
                 href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" 
                 target="_blank" 
                 rel="noopener noreferrer"
-              >
+              > */}
                 <button className="bg-white text-sm sm:text-base text-gray-800 px-4 sm:px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
-                  Submit Here
+                  Submissions Closed !!
                 </button>
-              </a>
+              {/* </a> */}
             </div>
           </div>
         </div>
