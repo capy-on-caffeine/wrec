@@ -70,7 +70,7 @@ const HeroSection = () => {
                 Conference Date
               </h3>
               <div className="text-xl sm:text-2xl font-bold text-pink-600">
-                18 - 20 April, 2025
+                18 - 19 April, 2025
               </div>
             </div>
           </div>
