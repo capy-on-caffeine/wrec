@@ -48,7 +48,7 @@ const HeroSection = () => {
                 </button>
               </a>
               <a
-                href="https://www.nitj.ac.in/events_registration/ic_wrec_2025/login"
+                href="https://docs.google.com/forms/d/1R1MnCreWujqMZ7cm5rPgqywlqf1FV8WJ20kl3gxT6-U/edit?ts=67dcfdfa"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -111,8 +111,8 @@ const HeroSection = () => {
 
             {/* Best Paper Award Card */}
             <div className="bg-[#FFF3E0] rounded-xl shadow-lg p-5 text-center flex-1">
-              <h1 className="text-xl sm:text-2xl font-bold text-[#f03d06] mb-4">
-                Awards
+              <h1 className="text-xl sm:text-2xl font-bold text-[#D84315] mb-4">
+                Best Paper Award
               </h1>
               <div className="flex justify-center mb-4">
                 <Image
