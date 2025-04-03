@@ -37,6 +37,7 @@ const Details = () => {
             { title: "Faculty from NIT Jalandhar", price: "Rs. 4000" },
             { title: "Industry Experts", price: "Rs. 5000 + GST" },
             { title: "Foreign authors", price: "USD 150" },
+            {title: "Fee for attendees", price: "Rs. 500"},
           ].map((item, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg p-4">
               <h3 className="text-lg font-medium text-pink-500">{item.title}:</h3>
@@ -51,7 +52,7 @@ const Details = () => {
           {[
             { title: "Last date for paper submission", date: data.lastDate },
             { title: "Intimation of acceptance", date: data.initiationAccept },
-            { title: "Camera ready & registration", date: data.coursesReady },
+            { title: "Camera ready", date: data.coursesReady },
             { title: "Last date of registration", date: data.lastAndReg },
             { title: "Date of Conference", date: data.conf },
           ].map((item, index) => (

@@ -4,7 +4,7 @@ import Marquee from "./Marquee";
 
 const HeroSection = () => {
   return (
-    <div 
+    <div
       id="hero"
       className="bg-pink-50 min-h-full flex flex-col items-center justify-center relative overflow-hidden pt-20 md:pt-24 pb-0"
     >
@@ -19,13 +19,12 @@ const HeroSection = () => {
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
               Women Researchers in
-              <br />
               Electronics and Computing
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-500 mb-6">
               on sustainable development goals
             </h2>
-            
+
             <div className="mb-6">
               <p className="text-gray-500 mb-2 text-base">Presented by</p>
               <p className="text-gray-800 text-sm sm:text-base">
@@ -37,25 +36,34 @@ const HeroSection = () => {
                 Punjab, India
               </p>
             </div>
-            
+
             <div className="flex justify-center lg:justify-start space-x-4">
-            <a 
-                href="https://www.nitj.ac.in/events_registration/ic_wrec_2025/login" 
-                target="_blank" 
+              <a
+                href="https://www.nitj.ac.in/events_registration/ic_wrec_2025/login"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-              <button className="bg-gray-800 text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
-                Register
-              </button>
+                <button className="bg-gray-800 text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
+                  Register(only accepted papers)
+                </button>
+              </a>
+              <a
+                href="https://www.nitj.ac.in/events_registration/ic_wrec_2025/login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-gray-800 text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-md transition-transform hover:scale-105 active:scale-95">
+                  Registration Form Link(after Registration only)
+                </button>
               </a>
               {/* <a 
-                href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              > */}
-                <button className="bg-white text-sm sm:text-base text-gray-800 px-4 sm:px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
-                  Submissions Closed !!
-                </button>
+                  href="https://cmt3.research.microsoft.com/WREC2025/Submission/Index" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                > */}
+              <button className="bg-white text-sm sm:text-base text-gray-800 px-4 sm:px-6 py-2 rounded-md border border-gray-800 transition-transform hover:scale-105 active:scale-95">
+                Submissions Closed !!
+              </button>
               {/* </a> */}
             </div>
           </div>
@@ -74,31 +82,57 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          
-          {/* Springer Card */}
-          <div className="bg-[#F4F8FC] rounded-xl shadow-lg p-5 text-center">
-            <h1 className="text-xl sm:text-2xl font-bold text-[#0D47A1] mb-4">
-              Proceedings Publication
-            </h1>
-            <div className="flex justify-center mb-4">
-              <Image
-                src="/LNEE.jpg"
-                alt="Proceedings Publication"
-                width={185}
-                height={130}
-                priority
-                className="rounded-lg shadow-md max-w-full h-auto"
-              />
+
+          {/* Springer Card and Best Paper Award Side by Side */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            {/* Springer Card */}
+            <div className="bg-[#F4F8FC] rounded-xl shadow-lg p-5 text-center flex-1">
+              <h1 className="text-xl sm:text-2xl font-bold text-[#0D47A1] mb-4">
+                Proceedings Publication
+              </h1>
+              <div className="flex justify-center mb-4">
+                <Image
+                  src="/LNEE.jpg"
+                  alt="Proceedings Publication"
+                  width={185}
+                  height={130}
+                  priority
+                  className="rounded-lg shadow-md max-w-full h-auto"
+                />
+              </div>
+              <p className="text-base sm:text-lg font-bold text-[#D32F2F]">
+                <span className="text-[#423d3d]">
+                  SCOPUS Indexed Springer Book Series,
+                </span>
+                <br />
+                &quot;Lecture Notes in Electrical Engineering&quot;
+              </p>
             </div>
-            <p className="text-base sm:text-lg font-bold text-[#D32F2F]">
-              <span className="text-[#423d3d]">
-                SCOPUS Indexed Springer Book Series,
-              </span>
-              <br />
-              &quot;Lecture Notes in Electrical Engineering&quot;
-            </p>
+
+            {/* Best Paper Award Card */}
+            <div className="bg-[#FFF3E0] rounded-xl shadow-lg p-5 text-center flex-1">
+              <h1 className="text-xl sm:text-2xl font-bold text-[#f03d06] mb-4">
+                Awards
+              </h1>
+              <div className="flex justify-center mb-4">
+                <Image
+                  src="/best_paper_award.png"
+                  alt="Best Paper Award"
+                  width={185}
+                  height={130}
+                  priority
+                  className="rounded-lg shadow-md max-w-full h-auto"
+                />
+              </div>
+              <p className="text-base sm:text-lg font-bold text-[#6D4C41]">
+                Recognizing outstanding research work
+                <br />
+                in the conference.
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
 
       {/* Background Circuit Element */}
