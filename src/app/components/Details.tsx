@@ -5,9 +5,9 @@ import React from "react";
 const Details = () => {
   const data = {
     lastDate: "31st March, 2025",
-    initiationAccept: "5th April, 2025",
+    initiationAccept: "8th April, 2025",
     coursesReady: "8th April, 2025",
-    lastAndReg: "8 April, 2025",
+    lastAndReg: "8th April, 2025",
     conf: "18-19 April, 2025",
   };
 

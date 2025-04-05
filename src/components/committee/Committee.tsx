@@ -21,7 +21,9 @@ const Committee = () => {
 
   // Define the orgmembers data
   const orgmembers: OrgMembers = {
-    chiefPatrons: ["Dr. B K Kanaujia, Professor, Director, NIT Jalandhar"],
+    chiefPatrons: ["Dr. B K Kanaujia, Professor, Director, NIT Jalandhar",
+      "Dr. A L Sangal, Professor, NIT Jalandhar",
+      "Dr. Ashish Raman, Professor, NIT Jalandhar"],
     executiveGeneralChair: [
       "Dr. Mamta Khosla, Professor, NIT Jalandhar",
       "Dr. Indu Saini, Associate Professor, NIT Jalandhar",
@@ -108,9 +110,8 @@ const Committee = () => {
         {Object.keys(orgmembers).map((key, index) => (
           <div key={index} className="mb-4">
             <div
-              className={`flex justify-between items-center py-4 px-4 cursor-pointer ${
-                activeIndex === index ? "bg-pink-100" : ""
-              }`}
+              className={`flex justify-between items-center py-4 px-4 cursor-pointer ${activeIndex === index ? "bg-pink-100" : ""
+                }`}
               onClick={() => handleToggle(index)}
             >
               <h3 className="text-lg font-bold capitalize">
