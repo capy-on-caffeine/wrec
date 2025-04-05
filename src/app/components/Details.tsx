@@ -31,10 +31,10 @@ const Details = () => {
         <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full md:w-[45%] flex flex-col gap-4">
           <h2 className="text-center w-full text-xl font-bold">Fee for the conference</h2>
           {[
-            { title: "Students", price: "Rs. 3000 + GST" },
-            { title: "Students from NIT Jalandhar", price: "Rs. 3000" },
-            { title: "Faculty", price: "Rs. 4000 + GST" },
-            { title: "Faculty from NIT Jalandhar", price: "Rs. 4000" },
+            { title: "Students", price: "Rs. 3000 + GST(GST is not applicable to NITJ students)" },
+            // { title: "Students from NIT Jalandhar", price: "Rs. 3000" },
+            { title: "Faculty", price: "Rs. 4000 + GST(GST is not applicable to NITJ Faculties)" },
+            // { title: "Faculty from NIT Jalandhar", price: "Rs. 4000" },
             { title: "Industry Experts", price: "Rs. 5000 + GST" },
             { title: "Foreign authors", price: "USD 150" },
             {title: "Fee for attendees", price: "Rs. 500"},
