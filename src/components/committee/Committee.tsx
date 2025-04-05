@@ -4,6 +4,7 @@ import React, { useState } from "react";
 // Define the type for the orgmembers object
 type OrgMembers = {
   chiefPatrons: string[];
+  patrons: string[];
   executiveGeneralChair: string[];
   programGeneralChair: string[];
   organisingSecretary: string[];
@@ -21,9 +22,11 @@ const Committee = () => {
 
   // Define the orgmembers data
   const orgmembers: OrgMembers = {
-    chiefPatrons: ["Dr. B K Kanaujia, Professor, Director, NIT Jalandhar",
-      "Dr. A L Sangal, Professor, NIT Jalandhar",
-      "Dr. Ashish Raman, Professor, NIT Jalandhar"],
+    chiefPatrons: ["Dr. B K Kanaujia, Professor, Director, NIT Jalandhar",],
+    patrons: [
+      "Dr. A L Sangal, Professor and Head(CSE), NIT Jalandhar",
+      "Dr. Ashish Raman, Professor and Head(ECE), NIT Jalandhar",
+    ],  
     executiveGeneralChair: [
       "Dr. Mamta Khosla, Professor, NIT Jalandhar",
       "Dr. Indu Saini, Associate Professor, NIT Jalandhar",
