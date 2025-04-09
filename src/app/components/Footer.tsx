@@ -47,9 +47,9 @@ const Footer = () => {
               <br />
               Punjab, India - 144008
             </p>
-            <p className="text-gray-700 mt-4">
+            {/* <p className="text-gray-700 mt-4">
               <strong>Phone:</strong> +91 98886 04632
-            </p>
+            </p> */}
             <p className="text-gray-700 mt-2">
               <strong>Email:</strong> wrec@nitj.ac.in
             </p>
