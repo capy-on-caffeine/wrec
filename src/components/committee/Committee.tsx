@@ -26,6 +26,7 @@ const Committee = () => {
     patrons: [
       "Dr. A L Sangal, Professor and Head(CSE), NIT Jalandhar",
       "Dr. Ashish Raman, Professor and Head(ECE), NIT Jalandhar",
+      "Dr. Vijay Kumar, Professor and Head(IT), NIT Jalandhar",
     ],  
     executiveGeneralChair: [
       "Dr. Mamta Khosla, Professor, NIT Jalandhar",
