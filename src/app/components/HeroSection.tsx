@@ -28,8 +28,9 @@ const HeroSection = () => {
             <div className="mb-6">
               <p className="text-gray-500 mb-2 text-base">Presented by</p>
               <p className="text-gray-800 text-sm sm:text-base">
-                Department of Electronics and Communication Engineering and
-                Department of Computer Science and Engineering
+                Department of Electronics and Communication Engineering,
+                Department of Computer Science and Engineering and
+                Department of Information and Technology
               </p>
               <p className="text-gray-800 text-sm sm:text-base mt-2">
                 Dr B R Ambedkar National Institute of Technology, Jalandhar,
